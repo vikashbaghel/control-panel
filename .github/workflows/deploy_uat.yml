@@ -1,16 +1,20 @@
 name: UAT-Deploy to AWS S3 on and Invalidate CloudFront
 
 on:
-  workflow_dispatch:
   pull_request:
     branches:
-      - uat
+      - anotherTest
     types:
       - closed
 
+  issue_comment:
+    types: [created]
+
 jobs:
-  deploy_uat_build_job:
-    #if: github.event.pull_request.merged
+  deploy:
+    if: >
+      (github.event_name == 'pull_request' && github.event.pull_request.merged == true) ||
+      (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/deploy'))
     runs-on: ubuntu-latest
 
     env:
@@ -25,8 +29,8 @@ jobs:
       REACT_APP_SENTRY_DSN: ${{ secrets.REACT_APP_SENTRY_DSN }}
 
       # get from env
-      S3_BUCKET_NAME: ${{ vars.UAT_S3_BUCKET_NAME }}
-      CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.UAT_CLOUDFRONT_DISTRIBUTION_ID }}
+      S3_BUCKET_NAME: ${{ vars.UAT_TEST_S3_BUCKET_NAME }}
+      CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.UAT_TEST_CLOUDFRONT_DISTRIBUTION_ID }}
 
       # static env
       REACT_APP_BASE_URL_V1: "https://api-uat.rupyz.com/v1"
