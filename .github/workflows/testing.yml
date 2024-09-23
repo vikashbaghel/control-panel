@@ -7,21 +7,30 @@ on:
     types:
       - closed
 
+  issue_comment:
+    types: [created]
+
 jobs:
   deploy:
-    if: startsWith(github.event.comment.body, '/deploy')
+    if: >
+      (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.comment.body, '/deploy')) ||
+      (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/deploy'))
+      
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
         uses: actions/checkout@v2
 
-
       - name: Extract subdomain from comment
         id: extract_subdomain
         run: |
-          comment="${{ github.event.comment.body }}"
-          subdomain=$(echo "$comment" | grep -oP '(?<=/deploy )\S+')
-          echo "SUBDOMAIN=$subdomain" >> $GITHUB_ENV
+          if [[ "${{ github.event.comment.body }}" != "" ]]; then
+            comment="${{ github.event.comment.body }}"
+            subdomain=$(echo "$comment" | grep -oP '(?<=/deploy )\S+')
+            echo "SUBDOMAIN=$subdomain" >> $GITHUB_ENV
+          else
+            echo "No comment found for subdomain extraction"
+            exit 1
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -110,9 +119,9 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
+# Optional Slack notification step
 #      - name: Notify Slack
 #        run: |
 #          SUBDOMAIN="${{ env.SUBDOMAIN }}"
 #          SLACK_MESSAGE="Deployment successful! Your site is available at: https://$SUBDOMAIN.your-domain.com"
 #          curl -X POST -H 'Content-type: application/json' --data '{"text":"'"$SLACK_MESSAGE"'"}' ${{ secrets.SLACK_WEBHOOK_URL }}
-#
