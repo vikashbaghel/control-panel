@@ -13,7 +13,7 @@ on:
 jobs:
   deploy:
     if: >
-      (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.comment.body, '/deploy')) ||
+      (github.event_name == 'pull_request' && github.event.pull_request.merged == true) ||
       (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/deploy'))
       
     runs-on: ubuntu-latest
@@ -27,11 +27,15 @@ jobs:
           if [[ "${{ github.event.comment.body }}" != "" ]]; then
             comment="${{ github.event.comment.body }}"
             subdomain=$(echo "$comment" | grep -oP '(?<=/deploy )\S+')
-            echo "SUBDOMAIN=$subdomain" >> $GITHUB_ENV
+            if [[ -z "$subdomain" ]]; then
+              echo "No subdomain found in comment"
+              exit 1
+            else
+              echo "SUBDOMAIN=$subdomain" >> $GITHUB_ENV
+            fi
           else
-            echo "No comment found for subdomain extraction"
+            echo "No comment body found for subdomain extraction"
             exit 1
-
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
