@@ -2,11 +2,6 @@ name: UAT-Deploy to AWS S3 on and Invalidate CloudFront
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches:
-      - uat
-    types:
-      - closed
 
 jobs:
   deploy_uat_build_job:
