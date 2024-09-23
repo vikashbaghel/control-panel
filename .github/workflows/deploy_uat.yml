@@ -28,6 +28,7 @@ jobs:
       #REACT_APP_FCM_VAPID: ${{ secrets.REACT_APP_FCM_VAPID }}
       #REACT_APP_SENTRY_DSN: ${{ secrets.REACT_APP_SENTRY_DSN }}
 
+
       # get from env
       S3_BUCKET_NAME: ${{ vars.UAT_TEST_S3_BUCKET_NAME }}
       CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.UAT_TEST_CLOUDFRONT_DISTRIBUTION_ID }}
