@@ -21,20 +21,29 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Extract subdomain from comment
+      - name: Install GitHub CLI
+        run: sudo apt-get install -y gh
+
+      - name: Fetch PR Details
+        run: |
+          PR_BODY=$(gh pr view ${{ github.event.pull_request.number }} --json body --jq '.body')
+          echo "PR_BODY=$PR_BODY" >> $GITHUB_ENV
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract subdomain from PR body
         id: extract_subdomain
         run: |
-          if [[ "${{ github.event.comment.body }}" != "" ]]; then
-            comment="${{ github.event.comment.body }}"
-            subdomain=$(echo "$comment" | grep -oP '(?<=/deploy )\S+')
+          if [[ "${{ env.PR_BODY }}" != "" ]]; then
+            subdomain=$(echo "${{ env.PR_BODY }}" | grep -oP '(?<=/deploy\s+"?)([^"]+)(?="?\s*$)')
             if [[ -z "$subdomain" ]]; then
-              echo "No subdomain found in comment"
+              echo "No subdomain found in PR body"
               exit 1
             else
               echo "SUBDOMAIN=$subdomain" >> $GITHUB_ENV
             fi
           else
-            echo "No comment body found for subdomain extraction"
+            echo "No PR body found for subdomain extraction"
             exit 1
           fi
 
