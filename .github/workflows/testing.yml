@@ -1,0 +1,114 @@
+name: Deploy React App
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  deploy:
+    if: startsWith(github.event.comment.body, '/deploy')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Extract subdomain from comment
+        id: extract_subdomain
+        run: |
+          comment="${{ github.event.comment.body }}"
+          subdomain=$(echo "$comment" | grep -oP '(?<=/deploy )\S+')
+          echo "SUBDOMAIN=$subdomain" >> $GITHUB_ENV
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Create S3 Bucket
+        run: |
+          BUCKET_NAME="${{ env.SUBDOMAIN }}-your-domain.com"
+          aws s3api create-bucket --bucket "$BUCKET_NAME" --region ${{ secrets.AWS_REGION }} --create-bucket-configuration LocationConstraint=${{ secrets.AWS_REGION }}
+          aws s3api put-bucket-website --bucket "$BUCKET_NAME" --website-configuration '{
+            "IndexDocument": {"Suffix": "index.html"},
+            "ErrorDocument": {"Key": "index.html"}
+          }'
+          aws s3api put-bucket-acl --bucket "$BUCKET_NAME" --acl public-read
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync build/ s3://$BUCKET_NAME --acl public-read
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Create CloudFront Distribution
+        id: cloudfront
+        run: |
+          BUCKET_NAME="${{ env.SUBDOMAIN }}-your-domain.com"
+          CF_ID=$(aws cloudfront create-distribution --distribution-config '{
+            "Origins": [{
+              "Id": "S3Origin",
+              "DomainName": "'"$BUCKET_NAME"'.s3.amazonaws.com",
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              }
+            }],
+            "DefaultCacheBehavior": {
+              "TargetOriginId": "S3Origin",
+              "ViewerProtocolPolicy": "redirect-to-https",
+              "AllowedMethods": ["GET", "HEAD"],
+              "CachedMethods": ["GET", "HEAD"],
+              "ForwardedValues": {
+                "QueryString": false,
+                "Cookies": {"Forward": "none"}
+              },
+              "MinTTL": 0,
+              "DefaultTTL": 86400,
+              "MaxTTL": 31536000
+            },
+            "Comment": "CloudFront distribution for $BUCKET_NAME",
+            "Enabled": true,
+            "ViewerCertificate": {
+              "CloudFrontDefaultCertificate": true
+            }
+          }' --query 'Distribution.Id' --output text)
+          echo "CLOUDFRONT_ID=$CF_ID" >> $GITHUB_ENV
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Create Route 53 Record
+        run: |
+          SUBDOMAIN="${{ env.SUBDOMAIN }}"
+          HOSTED_ZONE_ID="YOUR_HOSTED_ZONE_ID"  # Replace with your Hosted Zone ID
+          CF_DNS_NAME=$(aws cloudfront list-distributions --query "DistributionList.Items[?Id=='${{ env.CLOUDFRONT_ID }}'].DomainName" --output text)
+          
+          aws route53 change-resource-record-sets --hosted-zone-id "$HOSTED_ZONE_ID" --change-batch '{
+            "Changes": [{
+              "Action": "UPSERT",
+              "ResourceRecordSet": {
+                "Name": "'"$SUBDOMAIN"'.your-domain.com",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [{"Value": "'"$CF_DNS_NAME"'"}]
+              }
+            }]
+          }'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+#      - name: Notify Slack
+#        run: |
+#          SUBDOMAIN="${{ env.SUBDOMAIN }}"
+#          SLACK_MESSAGE="Deployment successful! Your site is available at: https://$SUBDOMAIN.your-domain.com"
+#          curl -X POST -H 'Content-type: application/json' --data '{"text":"'"$SLACK_MESSAGE"'"}' ${{ secrets.SLACK_WEBHOOK_URL }}
+#
