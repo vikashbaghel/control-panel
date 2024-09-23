@@ -12,6 +12,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
+
       - name: Extract subdomain from comment
         id: extract_subdomain
         run: |
