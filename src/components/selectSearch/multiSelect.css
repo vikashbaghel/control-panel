@@ -1,0 +1,4 @@
+.multi_select .ant-select-selector {
+  padding-block: 0 !important;
+  height: 43px !important;
+}

@@ -1,0 +1,12 @@
+services:
+  customer_panel:
+    container_name: customer_panel_dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./build:/app/build
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env

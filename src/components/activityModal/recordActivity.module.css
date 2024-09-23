@@ -1,0 +1,124 @@
+.record_activity_main {
+  padding: 0px !important;
+}
+
+.record_activity_main_header {
+  display: flex;
+  justify-content: end;
+  gap: 180px;
+  border-bottom: 2px solid #eee;
+  padding: 20px;
+}
+.record_activity_main_header_view {
+  display: flex;
+  justify-content: end;
+  gap: 210px;
+  border-bottom: 2px solid #eee;
+  padding: 20px;
+}
+.pricing_group_main_header {
+  display: flex;
+  justify-content: end;
+  gap: 275px;
+  border-bottom: 2px solid #eee;
+  padding: 20px;
+}
+.record_activity_main_header_title {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.record_activity_body {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.record_activity_body > input {
+  width: 300px;
+}
+.record_activity_main_header_cross {
+  cursor: pointer;
+}
+.record_activity_body_main {
+  padding: 10px 20px;
+}
+.record_activity_body_main_view {
+  background: linear-gradient(
+      136deg,
+      #fefcfc 0%,
+      #fcf2f6 26.89%,
+      #ebe7f3 60.47%,
+      #e4f5f9 100%
+    ),
+    #fff;
+  box-shadow: 2px 6px 12px 4px rgba(0, 0, 0, 0.02);
+  border-radius: 0px 0px 8px 8px;
+}
+.record_activity_body_name {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.record_activity_body_name label {
+  font-size: 14px;
+}
+.record_activity_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 30px;
+  padding: 20px;
+}
+.record_activity_body_checked {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  padding: 20px 0px;
+  gap: 30px;
+}
+
+.download_link {
+  color: #a3a3a3;
+  padding: 5px;
+  height: 70px;
+  overflow: hidden;
+  width: 70px;
+  font-size: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+.download_link:hover {
+  background: rgba(175, 175, 175, 0.1);
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.color_grey {
+  color: #727176;
+  text-transform: capitalize;
+}
+.bold_black {
+  color: #000;
+  font-weight: 600;
+  /* text-transform: capitalize; */
+  margin: 0;
+}
+.flex_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.flex {
+  display: flex;
+  gap: 0.5em;
+}

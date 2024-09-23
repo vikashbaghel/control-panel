@@ -1,0 +1,100 @@
+.form {
+  font-family: Poppins;
+  font-style: normal;
+  padding: 0 10px 0px 10px;
+  height: 0px !important;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+}
+
+.open_module {
+  height: 380px !important;
+  transition: height 0.2s ease-in-out;
+}
+
+.form_header {
+  font-size: 16px;
+  font-weight: 600;
+}
+.search_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search_head b {
+  color: #001a72;
+  margin: 0px;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  /* margin-top: 20px; */
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* assign List CSS */
+.assign_list_main {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  /* border: 2px solid #eee; */
+}
+.assign_list_box {
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 15px;
+  align-items: center;
+  overflow: hidden;
+  height: 50px;
+}
+.assign_list_box > div p {
+  margin: 0px;
+  font-size: 11px;
+  color: #727176;
+}
+.form .remove_button {
+  color: #ff0000;
+  margin: 5px 15px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.assign_button {
+  background: #fff;
+  border: 2px solid #dadce0;
+  border-radius: 4px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.assign_list_box button {
+  border-radius: 4px;
+  border: 2px solid #dadce0;
+  background: #fff;
+  color: #000;
+  font-weight: 500;
+  padding: 5px 20px;
+  font-size: 12px;
+}
+.assign_list_box button:hover {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.module_container {
+  /* height: 45px; */
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.module_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}

@@ -1,0 +1,25 @@
+.search_bar {
+  display: flex;
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 30em;
+  font-size: unset;
+  color: #727176;
+}
+.search_bar input {
+  width: 85%;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-right: 2px solid #eee;
+  padding: 0.5em 1em;
+}
+.search_bar span {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+}
+.search_bar svg {
+  font-size: 18px;
+}

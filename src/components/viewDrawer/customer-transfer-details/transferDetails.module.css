@@ -1,0 +1,41 @@
+.drawer_header {
+  text-align: center;
+}
+.drawer_header p,
+.select_customer p,
+.mapped_list p {
+  margin: 0;
+}
+.heading {
+  font-size: 18px;
+}
+.customer_name {
+  font-size: 14px;
+  color: #464646;
+}
+.select_customer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 2em;
+  border-bottom: 2px solid rgba(228, 228, 228, 1);
+}
+.mapped_list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+.space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selected_customer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.btn {
+  align-self: flex-end;
+}

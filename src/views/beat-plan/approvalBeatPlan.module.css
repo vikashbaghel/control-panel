@@ -1,0 +1,26 @@
+.beat_plan_heading {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1.5em;
+  padding-top: 2em;
+}
+.beat_plan_heading h2 {
+  margin: 0;
+}
+.filter_options {
+  display: flex;
+  gap: 2em;
+  border-bottom: 2px solid #fff;
+}
+.filter_name {
+  color: #727176;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+.active_filter {
+  border-bottom: 3px solid #322e80;
+  color: #322e80;
+}

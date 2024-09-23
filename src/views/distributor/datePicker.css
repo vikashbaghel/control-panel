@@ -1,0 +1,16 @@
+.date_picker .ant-picker {
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+.date_picker .ant-picker .ant-picker-input input {
+  display: none;
+}
+.date_picker .ant-picker-input svg {
+  width: 1.5em;
+  height: auto;
+}
+.date_picker_nopadding .ant-picker .ant-picker-input input {
+  padding: 0 !important;
+}

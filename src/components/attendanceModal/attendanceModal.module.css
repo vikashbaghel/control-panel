@@ -1,0 +1,21 @@
+.modal_container {
+  padding: 20px;
+  text-align: center;
+  font-family: Poppins;
+}
+.modal_container > div {
+  margin-left: 10px;
+}
+
+.modal_head {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.modal_container button {
+  height: 40px;
+  width: 115px;
+  font-size: 15px;
+  text-align: center;
+}

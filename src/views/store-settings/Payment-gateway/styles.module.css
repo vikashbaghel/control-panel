@@ -1,0 +1,79 @@
+.container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background: linear-gradient(
+    90.03deg,
+    rgba(255, 255, 255, 0.7) 1.65%,
+    rgba(255, 255, 255, 0.4) 98.92%
+  );
+  border-radius: 10px;
+  align-items: center;
+}
+.text {
+  margin: 0;
+  color: #727176;
+  font-weight: 500;
+  text-align: center;
+}
+.link {
+  padding-top: 1.5em;
+}
+.link span {
+  color: #322e80;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*          linked account table          */
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*            edit modal            */
+.edit_title {
+  padding-block: 1em;
+  text-align: center;
+}
+.edit_modal_body {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-family: poppins;
+}
+
+.edit_modal_body p {
+  margin: 0;
+}
+.color_grey {
+  color: #727176;
+}
+.flex_col_5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.bold {
+  font-weight: 500;
+}
+.edit_modal_footer {
+  background: #ffffff;
+  padding: 1em;
+  justify-content: flex-end;
+  border-radius: 0 0 8px 8px;
+}

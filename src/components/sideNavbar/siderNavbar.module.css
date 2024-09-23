@@ -1,0 +1,96 @@
+.sider_container {
+  width: 300px;
+  position: fixed;
+  overflow: auto;
+  height: 100vh;
+  background: linear-gradient(
+    176.05deg,
+    rgba(255, 255, 255, 0.6) 3.67%,
+    rgba(255, 255, 255, 0.3) 146.77%
+  );
+  box-shadow: 4px 0px 31px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.5px);
+  z-index: 20;
+  transition: width 300ms, height 300ms;
+}
+.sider_container_collapsed {
+  width: 80px;
+  box-shadow: none;
+}
+
+.option_container {
+  width: 280px;
+  overflow: hidden;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 10px;
+  padding: 0 15px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  width: calc(100% - 10px);
+  color: #727176;
+  border-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: border-radius 0.15s ease-in-out;
+}
+.option > div {
+  display: flex;
+  gap: 20px;
+}
+.open_option {
+  width: 50px;
+  border-radius: 50%;
+}
+.open_option > div > div {
+  opacity: 0;
+}
+.active_option {
+  background: linear-gradient(
+    92.35deg,
+    #322e80 8.07%,
+    rgba(50, 46, 128, 0.7) 91.68%
+  );
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+.active_option:hover {
+  background: linear-gradient(
+    92.35deg,
+    #322e80 8.07%,
+    rgba(50, 46, 128, 0.7) 91.68%
+  ) !important;
+  color: #fff;
+}
+.dropDown_option > div {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #727176;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding-left: 70px;
+}
+.option:hover,
+.dropDown_option > div:hover {
+  background: hsl(0, 0%, 91%, 0.3);
+}
+
+.dropDown_active {
+  height: 120;
+  transition: height 0.1s ease-in-out;
+}
+.dropDown_inactive {
+  height: 0;
+  transition: height 0.1s ease-in-out;
+}

@@ -1,0 +1,83 @@
+.attendance_top_content {
+  padding: 24px;
+  margin: 0;
+  min-height: 10vh;
+  border-radius: 10px;
+}
+
+.attendance_top_content > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attendance_top_content h3 {
+  font-size: 21px;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.attendance_top_content p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.attendance_top_content button {
+  width: 120px;
+}
+
+.table_header {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.table_header .month_header {
+  width: 200px;
+  text-align: center;
+}
+
+.table_header input {
+  border: none;
+  width: 50px;
+  margin-left: 60px;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* edit Modal */
+.edit_modal {
+  border-top: 2px solid #000;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.edit_modal .date {
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+
+.edit_modal .select {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.edit_modal .lable {
+  font-size: 17px;
+  padding-bottom: 5px;
+}
+
+.edit_modal .select > div,
+.edit_modal .date_picker,
+.edit_modal textarea {
+  background: #f5f5f5 !important;
+  width: 100%;
+  outline: none;
+}

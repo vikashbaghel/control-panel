@@ -1,0 +1,60 @@
+.beat_drawer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em 2em;
+}
+.beat_drawer p {
+  margin: 0;
+}
+.col_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bold_black {
+  font-weight: 600;
+  color: #000;
+}
+.bold_blue {
+  font-weight: 600;
+  color: #312b81;
+  text-transform: capitalize;
+}
+.flex_5 {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.blue_filter {
+  filter: invert(57%) sepia(60%) saturate(253%) hue-rotate(204deg)
+    brightness(81%) contrast(85%);
+}
+
+/*       staff detail card           */
+.staff_detail_card {
+  border-radius: 10px;
+  border: 1.5px solid #fff;
+  background: linear-gradient(
+    94deg,
+    rgba(255, 255, 255, 0.7) 8.19%,
+    rgba(255, 255, 255, 0.4) 91.78%
+  );
+  box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+}
+.staff_detail_card p {
+  margin: 0;
+}
+.staff_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}

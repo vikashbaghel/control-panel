@@ -1,0 +1,17 @@
+.create_address_container {
+  padding: 0 20px;
+}
+.create_address_container label {
+  font-family: Poppins;
+  font-size: 14px;
+}
+.create_address_container input {
+  width: 95.5%;
+}
+.edit_header {
+  overflow: hidden;
+  border-radius: 0px 0px 10px 10px;
+}
+.edit_header button {
+  border-radius: 3px !important;
+}

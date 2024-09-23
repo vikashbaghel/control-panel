@@ -1,0 +1,148 @@
+.notification_container {
+  position: absolute;
+  top: -100px;
+  right: -120px;
+  opacity: 0;
+  transition: all 0.2s;
+  /* transition-delay: 0.2s; */
+  scale: 0;
+  z-index: 0;
+  overflow: auto;
+  width: 350px;
+  max-height: 600px;
+  background: #ffffff;
+  box-shadow: 0px 4px 31px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  line-height: normal;
+}
+
+.isOpen {
+  top: 57px !important;
+  opacity: 1;
+  z-index: 2;
+  scale: 1;
+  top: 42px;
+  transition: all 0.3s;
+  transition-delay: 0.2s;
+  transition-property: opacity;
+}
+
+.notification_container h3 {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  line-height: 50px;
+  margin-left: 20px;
+}
+
+.notification_container .seen_all_buttons {
+  font-size: 12px;
+  cursor: pointer;
+  color: #808080;
+  line-height: 20px;
+  margin-left: 20px;
+}
+
+.notification_container .seen_all_buttons > span {
+  margin-right: 20px;
+}
+
+.notification_container .seen_all_buttons > span:hover {
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #1677ff;
+  line-height: 20px;
+}
+
+.notification_container .notification_group {
+  padding: 10px 20px !important;
+  padding-top: 20px;
+  border-bottom: 1px dashed #ddd;
+  border-radius: 0 !important;
+  line-height: 30px;
+  position: relative;
+  text-align: justify;
+}
+
+.notification_container .date {
+  position: absolute;
+  font-size: 10px;
+  color: #808080;
+  font-weight: 600;
+  right: 20px;
+  top: 10px;
+}
+
+.notification_container .header {
+  font-weight: 600;
+  width: 231px;
+  text-align: start;
+}
+.notification_container .description {
+  font-size: 12px;
+  padding-left: 4px;
+  line-height: 20px;
+}
+.notification_container button {
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 0 !important;
+  background-color: #fff;
+  border: #e9e9e9;
+  box-shadow: 1px 1px 5px #000;
+  font-weight: 600;
+  color: #5f5f5f;
+}
+
+.notification_container button:hover {
+  color: #1677ff;
+}
+
+.modal_notification_group {
+  border-bottom: 1px dashed #ddd;
+  border-radius: 0 !important;
+  position: relative;
+}
+
+.modal_notification_group > div {
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal_seen_all {
+  padding-left: 35px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #5f5f5f;
+  cursor: pointer;
+}
+
+.modal_seen_all:hover {
+  font-weight: 600;
+  color: #1677ff;
+  cursor: pointer;
+}
+
+.modal_notification_group .date {
+  position: absolute;
+  font-size: 10px;
+  color: #808080;
+  font-weight: 600;
+  right: 20px;
+  top: 10px;
+}
+
+.modal_notification_group .modal_header {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.modal_notification_group .modal_description {
+  font-size: 12px;
+  font-weight: 600;
+}

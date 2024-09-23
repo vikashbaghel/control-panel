@@ -1,0 +1,48 @@
+.flex {
+  display: flex;
+  gap: 1em;
+}
+.field_input {
+  border: 2px solid #eeeeee;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.2s ease-in;
+}
+.action_btns {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  width: 94px;
+  cursor: pointer;
+}
+.sidebar {
+  background: linear-gradient(
+    90.03deg,
+    rgba(255, 255, 255, 0.7) 1.65%,
+    rgba(255, 255, 255, 0.4) 98.92%
+  );
+  border: 2px solid #ffffff;
+  height: fit-content;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sidebar_options {
+  padding: 1em;
+  cursor: pointer;
+}
+.sidebar_options:hover,
+.selected_option {
+  background: #f0f0f6;
+  color: #001a72;
+  font-weight: 600;
+}
+.flex_2 {
+  display: flex;
+  gap: 2em;
+}

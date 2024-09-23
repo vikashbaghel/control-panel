@@ -1,0 +1,201 @@
+.customer_details_drawer {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.customer_details_drawer p {
+  margin: 0;
+}
+.back_btn {
+  display: flex;
+  align-items: center;
+}
+.title {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+/*                customer detail card           */
+.customer_detail_card {
+  border-radius: 10px;
+  border: 4px solid rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    94deg,
+    rgba(255, 255, 255, 0.7) 8.19%,
+    rgba(255, 255, 255, 0.4) 91.78%,
+    rgba(255, 255, 255, 0.4) 91.78%
+  );
+  box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  overflow: hidden;
+}
+.customer_detail_card p {
+  margin: 0;
+}
+.side_banner {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  text-align: center;
+}
+.customer_info_card {
+  width: 100%;
+  padding: 14px;
+}
+.customer_detail {
+  display: flex;
+  gap: 1em;
+  padding-block-end: 1em;
+}
+.customer_detail_border {
+  display: flex;
+  gap: 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  padding-block-end: 1em;
+}
+.customer_profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.customer_basic_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.customer_name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.customer_address {
+  color: #0886d2;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.customer_address:hover {
+  color: #0886d2;
+}
+.customer_address img {
+  width: 13px !important;
+}
+.contact_person {
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.customer_name p,
+.contact_person p {
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.customer_parent_details {
+  display: flex;
+  gap: 0.3em;
+  font-size: 12px;
+  font-weight: 600;
+}
+.customer_parent_level {
+  max-width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.more_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: 1em;
+}
+.action_button {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border: 1px solid transparent;
+}
+.action_button img {
+  filter: invert(50%) sepia(8%) saturate(2402%) hue-rotate(205deg)
+    brightness(81%) contrast(81%);
+}
+.action_button_active {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border: 1px solid #6b679f;
+  border-radius: 5px;
+}
+.order_img {
+  filter: grayscale(100%) brightness(0%) invert(100%);
+}
+
+/*              ----------             */
+
+/*              Customer Activities           */
+.more_activities {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding-inline: 2em;
+  background: linear-gradient(
+    93.95deg,
+    rgba(255, 255, 255, 0.7) 8.19%,
+    rgba(255, 255, 255, 0.4) 91.78%
+  );
+  box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.05);
+}
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  cursor: pointer;
+  color: #727176;
+  font-weight: 600;
+  padding-block: 0.7em;
+  border-bottom: 2px solid transparent;
+}
+.filters img {
+  width: 24px;
+  height: auto;
+  filter: saturate(0) grayscale(100%) sepia(10%) hue-rotate(0deg)
+    brightness(100%) contrast(100%);
+}
+.active_filter {
+  color: #322e80;
+  filter: invert(50%) sepia(8%) saturate(2402%) hue-rotate(205deg)
+    brightness(81%) contrast(81%);
+  border-bottom: 2px solid;
+}
+/*           ---------                   */
+
+/*          list               */
+.list {
+  padding-inline: 2em;
+  padding-bottom: 2em;
+}
+
+.view_all {
+  text-align: right;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  color: #001a72;
+  text-decoration: underline;
+}

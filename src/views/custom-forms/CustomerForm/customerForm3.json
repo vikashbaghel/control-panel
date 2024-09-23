@@ -1,0 +1,63 @@
+{
+    "form_name": "",
+    "included": [],
+    "sections": [  
+      {
+        "name": "Assign", 
+        "form_items": [
+          {
+            "status": "visible",
+            "type": "DROPDOWN",
+            "is_custom": false,
+            "field_props": {
+              "name": "select_staff",
+              "label": "Assign Staff",
+              "required": false
+            },
+            "input_props": {
+              "placeholder": "Assign Staff"
+            }
+          },
+          {
+            "status": "visible",
+            "type": "DROPDOWN",
+            "is_custom": false,
+            "field_props": {
+              "name": "select_category",
+              "label": "Product Category Mapping",
+              "required": false
+            },
+            "input_props": {
+              "placeholder": "Product Category Mapping"
+            }
+          },
+          {
+            "status": "visible",
+            "type": "DROPDOWN",
+            "is_custom": false,
+            "field_props": {
+              "name": "select_beat",
+              "label": "Assign Beat",
+              "required": false
+            },
+            "input_props": {
+              "placeholder": "Assign Beat"
+            }
+          },
+          {
+            "status": "visible",
+            "type": "DROPDOWN",
+            "is_custom": false,
+            "field_props": {
+              "name": "pricing_group",
+              "label": "Assign Pricing Group",
+              "required": false
+            },
+            "input_props": {
+              "placeholder": "Assign Pricing Group"
+            }
+          }
+        ]
+      }
+    ]
+  }

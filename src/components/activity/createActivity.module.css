@@ -1,0 +1,21 @@
+.form_container {
+  padding: 0 20px;
+  font-family: Poppins;
+}
+
+.form_container label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form_container label span {
+  color: red;
+  font-size: 18px;
+}
+
+.form_container textarea {
+  width: calc(100% - 35px);
+}

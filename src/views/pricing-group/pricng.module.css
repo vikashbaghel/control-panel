@@ -1,0 +1,162 @@
+.product_pricing table {
+  width: 100%;
+  border-radius: 10px 5px 5px 5px;
+}
+
+.pricing_container {
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7) 1.65%,
+    rgba(255, 255, 255, 0.4) 98.92%
+  );
+  padding: 20px;
+  margin-left: 35px;
+  width: fit-content;
+}
+.pricing_group_table {
+  background: transparent;
+  border: 2px solid #fff;
+  background: linear-gradient(
+    121deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  margin-top: 15px;
+  border-radius: 8px;
+
+  /* min-width: 1100px; */
+}
+
+.pricing_group_table th {
+  background: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+.pricing_group_table td {
+  border-top: 3px solid #fff;
+  /* text-align: center; */
+  vertical-align: baseline;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* testing */
+.product_pricing input {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 12px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product_pricing ul {
+  position: absolute;
+  top: 40px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 0;
+  list-style: none;
+  width: 400px;
+  max-height: 150px;
+  overflow: auto;
+  z-index: 5;
+}
+.product_pricing ul li {
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+.product_pricing ul li:hover {
+  background: #f1f1f1;
+}
+.product_pricing th,
+.product_pricing td {
+  border: none;
+  text-align: center;
+}
+.product_pricing th {
+  background: #fafafa;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+}
+.product_pricing tr {
+  border-bottom: 1px solid #ddd;
+  vertical-align: initial;
+}
+
+/* pricing Group */
+.pricing_group_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.header_left {
+  display: flex;
+}
+.header_name,
+.header_description {
+  margin-right: 50px;
+}
+.header_name > div:first-child,
+.header_description > div:first-child {
+  color: #727176;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.header_name > div:last-child {
+  font-size: 15px;
+  font-weight: 600;
+}
+.header_description > div:last-child {
+  max-width: 330px;
+  color: #727176;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+}
+.header_right > div:first-child {
+  color: #727176;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+/*    table css */
+.padding_top {
+  padding-block: 1em;
+}
+
+.pricing_group_table_ul {
+  position: absolute;
+  top: 42px;
+  left: 0px;
+  padding: 0;
+  list-style: none;
+  width: 400px;
+  max-height: 250px;
+  overflow: auto;
+  z-index: 5;
+  border-radius: 8px;
+  border: 2px solid #eee;
+  background: #fff;
+  box-shadow: 2px 6px 12px 4px rgba(0, 0, 0, 0.02);
+}
+.pricing_group_table_ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+  text-align: left;
+  height: 35px;
+}
+.pricing_group_table_ul li:hover {
+  background: #f1f1f1;
+}

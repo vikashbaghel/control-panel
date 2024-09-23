@@ -1,0 +1,60 @@
+name: UAT-Deploy to AWS S3 on and Invalidate CloudFront
+
+on:
+  pull_request:
+    branches:
+      - uat
+    types:
+      - closed
+
+jobs:
+  deploy_uat_build_job:
+    if: github.event.pull_request.merged
+    runs-on: ubuntu-latest
+
+    env:
+      # get aws secrets
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+
+      # get react secrets
+      REACT_APP_GOOGLE_MAPS_KEY: ${{ secrets.REACT_APP_GOOGLE_MAPS_KEY }}
+      REACT_APP_FCM_VAPID: ${{ secrets.REACT_APP_FCM_VAPID }}
+      REACT_APP_SENTRY_DSN: ${{ secrets.REACT_APP_SENTRY_DSN }}
+
+      # get from env
+      S3_BUCKET_NAME: ${{ vars.UAT_S3_BUCKET_NAME }}
+      CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.UAT_CLOUDFRONT_DISTRIBUTION_ID }}
+
+      # static env
+      REACT_APP_BASE_URL_V1: "https://api-uat.rupyz.com/v1"
+      REACT_APP_BASE_URL_V2: "https://api-uat.rupyz.com/v2"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.18.1"
+
+      - name: Install npm dependencies
+        run: npm install --force
+
+      - name: Make a Build for React
+        env:
+          CI: false
+        run: npm run build
+
+      - name: Install AWS CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y awscli
+
+      - name: Deploy build to S3
+        run: aws s3 sync build/ s3://$S3_BUCKET_NAME --delete --acl public-read
+
+      - name: Invalidate CloudFront distribution
+        run: aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"

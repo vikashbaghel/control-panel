@@ -1,0 +1,17 @@
+.pagination_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.pagination_container button {
+  display: flex;
+  border: 1px solid #dadce0;
+  background: #f8f9fa;
+  border-radius: 4px;
+  padding: 8px;
+}
+.pagination_container button:disabled {
+  cursor: not-allowed;
+  background: rgb(0 0 0 / 4%);
+}

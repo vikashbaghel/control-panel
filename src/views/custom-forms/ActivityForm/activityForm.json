@@ -1,0 +1,52 @@
+{
+    "form_name": "",
+    "included": [],
+    "sections": [
+      {
+        "name": "Basic Details",
+        "form_items": [
+          {
+            "status": "visible",
+            "type": "LONG_ANSWER",
+            "is_custom": false,
+            "field_props": {
+              "name": "comments",
+              "label": "Comments",
+              "required": false
+            },
+            "input_props": {
+              "placeholder": "Enter Comments",
+              "maxLength":1250
+            }
+          },
+          {
+            "status": "visible",
+            "type": "DATE_TIME_PICKER",
+            "is_custom": false,
+            "field_props": {
+              "name": "due_datetime",
+              "label": "Follow up Date and Time",
+              "required": false
+            },
+            "input_props": {
+              "placeholder": "Select Date"
+            }
+          },
+          {
+            "status": "visible",
+            "type": "FILE_UPLOAD",
+            "is_custom": false,
+            "field_props": {
+              "name": "pics",
+              "label": "Image",
+              "required": false
+            },
+            "input_props": {
+             "maxCount":"6",
+             "accept":".jpeg,.png,.jpg,.pdf"
+            }
+           }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,159 @@
+.select_field {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 130px;
+  white-space: nowrap;
+  padding: 7px 5px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #6c6c6c;
+  text-align: center;
+  position: relative;
+  font-family: "Poppins", sans-serif !important;
+}
+.option {
+  font-size: 14px;
+}
+.close_status {
+  position: absolute;
+  font-size: 12px;
+  left: 15px;
+  font-weight: 600;
+  bottom: -2px;
+  color: rgb(231 24 24);
+}
+
+/* AddInput */
+.add_input_container {
+  /* overflow-y: auto; */
+  width: 100%;
+  /* height: fit-content; */
+  margin-bottom: 10px;
+}
+
+.add_input_group_1 {
+  /* display: flex;
+  gap: 20px; */
+  /* width: calc(100% - 35px); */
+  margin: 8px 0;
+  /* position: relative; */
+  margin-left: 35px;
+  /* justify-content: space-between; */
+}
+.product_image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.add_input_group_1 > div {
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.qty_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.qty_container > div {
+  display: flex;
+  height: 45px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  color: #000000;
+  padding: 10px 15px;
+  font-family: Poppins;
+}
+.add_input_group_1 input {
+  border: none;
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.add_input_group_1 ul {
+  position: absolute;
+  top: 30px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 0;
+  list-style: none;
+  width: 400px;
+  max-height: 150px;
+  overflow: auto;
+  z-index: 5;
+}
+.add_input_group_1 ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+.add_input_group_1 ul li:hover {
+  background: #f1f1f1;
+}
+
+.add_input_group_2 > div {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+.add_input_group_2 > div > div {
+  color: #969696;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: auto;
+}
+.add_input_group_2 input {
+  border: none !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.add_input_group_2 select {
+  border: none !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-right: 1px solid #d9d9d9 !important;
+}
+.add_input_group_2 > div:last-child input {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.add_input_container > div:last-child {
+  position: relative;
+  padding-bottom: 10px;
+}
+.add_input_group_2 ul {
+  position: absolute;
+  top: 30px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 0;
+  list-style: none;
+  width: 400px;
+  max-height: 150px;
+  overflow: auto;
+  z-index: 5;
+}
+.add_input_group_2 ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+.add_input_group_2 ul li:hover {
+  background: #f1f1f1;
+}
+
+.beat_list {
+  width: 100%;
+}

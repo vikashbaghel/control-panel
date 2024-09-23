@@ -1,0 +1,35 @@
+/* last variant option */
+.addVariantOptions .ant-form-item:nth-last-of-type(1) {
+  opacity: 0.5;
+}
+/* Disallow removing last variant option */
+.addVariantOptions .ant-form-item:nth-last-of-type(1) .ant-input-suffix {
+  opacity: 0;
+  pointer-events: none;
+}
+.addVariantOptions .ant-form-item:nth-last-of-type(1) .ant-input-prefix {
+  display: none;
+  pointer-events: none;
+}
+/* Disallow removing first variant option (mandatory) */
+.addVariantOptions .ant-form-item:nth-child(1) .ant-input-suffix {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Error classes */
+tr[error="true"] td {
+  background-color: rgba(255, 0, 0, 0.025) !important;
+}
+.ant-table-wrapper
+  .ant-table-tbody
+  > tr[error="true"]
+  > td.ant-table-cell-row-hover {
+  background-color: rgba(255, 0, 0, 0.025) !important;
+}
+tr[error="true"] td:nth-child(1) {
+  border-left: 5px solid rgba(255, 0, 0, 0.6) !important;
+}
+tr[error="true"] .edit-icon {
+  color: rgba(255, 0, 0, 0.6);
+}

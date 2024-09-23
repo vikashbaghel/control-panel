@@ -1,0 +1,46 @@
+.filter {
+  padding: 0 !important;
+  font-family: Poppins;
+  right: 0;
+  width: 500px;
+}
+.date_filter {
+  width: 700px;
+}
+
+.filter_container > div {
+  line-height: 40px;
+}
+.filter_list {
+  background: #f4f4f4;
+  border: 1px solid #eeeeee;
+  color: #727176;
+}
+
+.option {
+  padding: 0 10px;
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+}
+.active_option {
+  color: #000;
+  font-size: 15px;
+  background: #ffff;
+}
+.list_group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #eeeeee;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.filter_footer {
+  height: 70px;
+  padding: 0px 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  border-top: 2px solid #eeeeee;
+  align-items: center;
+}

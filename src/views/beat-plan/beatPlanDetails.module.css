@@ -1,0 +1,245 @@
+.beat_detail_container {
+  font-family: Poppins;
+}
+.beat_date {
+  margin-left: 35px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.header_container span {
+  color: #727176;
+  margin-left: 5px;
+}
+/* .header_bottom {
+  margin-top: -50px;
+  position: absolute;
+  text-align: right;
+  right: 24px;
+} */
+.search_bar {
+  display: flex;
+  justify-content: flex-end;
+  padding-inline: 1.5em;
+}
+
+.table_filters_header {
+  display: flex;
+  justify-content: space-between;
+}
+.table_filters {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+.filter_name {
+  color: #727176;
+  font-weight: 600;
+  margin: 0;
+  cursor: pointer;
+}
+.active_filter_name {
+  color: #322e80;
+  border-bottom: 3px solid #322e80;
+}
+.btn_styles {
+  border-radius: 4px;
+  border: 1px solid #dadce0;
+  background: #f8f9fa;
+  text-align: center;
+  padding: 0.5em 0;
+}
+.reject_btn {
+  border-radius: 4px;
+  border: 2px solid #dadce0;
+  background: #f8f9fa;
+  font-size: 14px;
+  text-align: center;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.approve_btn {
+  border-radius: 4px;
+  border: 2px solid #fff;
+  background: linear-gradient(
+    92deg,
+    #322e80 8.07%,
+    rgba(50, 46, 128, 0.7) 91.68%
+  );
+  box-shadow: 2px 6px 12px 4px rgba(0, 0, 0, 0.02);
+  font-size: 14px;
+  text-align: center;
+  padding: 0.5em 1em;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Customer Lead header */
+.customer_lead_container {
+  border-radius: 10px;
+  border: 1.5px solid #fff;
+  background: linear-gradient(
+    94deg,
+    rgba(255, 255, 255, 0.7) 8.19%,
+    rgba(255, 255, 255, 0.4) 91.78%
+  );
+  box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: start;
+  overflow: scroll;
+  height: 150px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0;
+}
+
+.beat_details {
+  padding-left: 10px;
+  padding-right: 30px;
+  min-width: 190px;
+  margin: 20px 0;
+}
+.detail_head {
+  font-weight: 600;
+}
+.detail_date {
+  color: #464646;
+  font-size: 12px;
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  font-weight: 500;
+}
+.detail_name {
+  color: #312b81;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.beat_count {
+  border-left: 1px solid #dedede;
+  margin: 20px 0;
+  padding: 0 30px;
+}
+.beat_count > div {
+  display: flex;
+}
+.cancelled_reason {
+  border: 1px dashed #f3252c;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+.row_first_head,
+.row_second_head,
+.row_third_head {
+  margin-bottom: 20px;
+}
+.row_first {
+  display: flex;
+  align-items: center;
+}
+.row_first,
+.row_second,
+.row_third {
+  margin-bottom: 3px;
+}
+
+.row_first_head,
+.row_first {
+  width: 130px;
+}
+.row_second_head,
+.row_second {
+  width: 100px;
+  text-align: end;
+}
+.row_third_head,
+.row_third {
+  width: 80px;
+  text-align: end;
+}
+
+.beat_night_stay {
+  margin: 15px 0;
+  padding: 0 30px;
+  border-left: 1px solid #dedede;
+}
+
+.night_head {
+  display: flex;
+  align-items: center;
+}
+.night_head span {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.night_body {
+  width: 250px;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+.beat_admin {
+  padding: 15px 30px;
+  border-radius: 10px;
+  background: #fff4ef;
+  height: 100%;
+}
+
+.admin_head {
+  display: flex;
+  align-items: center;
+}
+.admin_head span {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.admin_body {
+  width: 250px;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+
+/* Approval Reason modal */
+.approve_container {
+  font-family: Poppins;
+}
+.approve_container textarea {
+  width: calc(100% - 70px);
+  margin: 10px 20px 0 20px;
+}
+.approve_container label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.approve_container label span {
+  color: #727176;
+  font-size: 12px;
+}
+
+.beat_cancel_tag {
+  border-radius: 0px 0px 10px 10px;
+  background: #f00;
+  color: #fff;
+  padding: 0px 5px;
+  font-size: 10px;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -23px;
+  top: 25px;
+}
+.beat_cancel_tag_detail {
+  border-radius: 0px 0px 10px 10px;
+  background: #f00;
+  color: #fff;
+  padding: 0px 30px;
+  font-size: 10px;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -45px;
+  top: 50px;
+}

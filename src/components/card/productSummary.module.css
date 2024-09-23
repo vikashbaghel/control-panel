@@ -1,0 +1,85 @@
+.summary_container {
+  border-radius: 7px;
+  padding: 24px 0 0px 0;
+  border: 2px solid #fff;
+  background: linear-gradient(
+    121deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  box-shadow: 2px 6px 12px 4px rgba(0, 0, 0, 0.02);
+  font-family: Poppins;
+}
+.summary_top,
+.summary_mid,
+.summary_end {
+  padding: 0px 24px;
+}
+.summary_mid,
+.summary_end {
+  border-top: 2px solid #fff;
+  padding-top: 15px;
+}
+.summary_mid {
+  padding-bottom: 15px;
+}
+.summary_mid button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.list_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 15px;
+}
+.summary_container input,
+.summary_container select {
+  font-family: Poppins;
+  font-size: 15px;
+  width: 100%;
+  text-align: left;
+  padding: 5px 15px;
+}
+.input {
+  margin: 5px;
+  width: 49%;
+  font-family: Poppins;
+  font-size: 15px;
+}
+.list_item_total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+.summary_container > div:first-child > div:first-child {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+}
+.minor_heading {
+  font-size: 15px;
+}
+.payment_container {
+  padding: 0 20px;
+}
+.payment_container label {
+  font-family: Poppins;
+  font-size: 14px;
+  margin: 0 !important;
+  font-weight: 500;
+}
+.payment_container input,
+.payment_container select,
+.payment_container textarea {
+  margin: 10px 0 20px 0 !important;
+}
+.payment_container input {
+  width: 94.5%;
+}
+.payment_container textarea {
+  width: 94%;
+}

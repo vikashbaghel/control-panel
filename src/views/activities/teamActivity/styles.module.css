@@ -1,0 +1,163 @@
+.gradient_background {
+  background: linear-gradient(
+    107.41deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  border: 1.5px solid #ffffff;
+  box-shadow: 2px 6px 12px 0px #0000000d;
+  border-radius: 10px;
+}
+.space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.color_grey {
+  color: #727176;
+  font-weight: 500;
+}
+.bold_black {
+  color: #000000;
+  font-weight: 600;
+}
+.img_container_rounded {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+/*          staff dashboard table      */
+.staff_table_container {
+  background: linear-gradient(
+    107.41deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  padding: 1em;
+  border-radius: 10px;
+}
+.link_tag,
+.link_tag:hover {
+  color: #312b81;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.filter_button {
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  border: 1px solid #dddddd;
+  color: #727176;
+  background: #f4f4f4;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 500;
+}
+.range_filter_dd_menu {
+  position: absolute;
+  top: 100%;
+  z-index: 99;
+  background: #f4f4f4;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  width: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.2s ease;
+}
+.dd_menu_options {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.animate_dd_on_open {
+  transform: scaleY(1);
+  transition: transform 0.2s ease;
+}
+.selected_filter_option {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 6px;
+}
+.no_padding {
+  padding: 0 !important;
+}
+.date_filter_btns {
+  border: none;
+  outline: none;
+  padding-inline: 12px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.date_filter_btns:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.fake_location_text {
+  color: #c26921;
+  font-size: 12px;
+  text-decoration: underline;
+  font-weight: 400;
+}
+.fake_location_tag {
+  color: #c26921;
+  background-color: #f0ddce;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+/*            staff activity detail with map container         */
+.dsr_detail_container {
+  display: flex;
+  border: 2px solid rgb(255, 255, 255);
+  background: linear-gradient(
+    107.41deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.02) 2px 6px 12px 4px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.attendance_info_container {
+  border: 1px solid #dddddd;
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+  cursor: pointer;
+}
+.map_activity_popup {
+  width: 300px;
+  text-align: left;
+  font-family: poppins;
+}
+.map_current_location_btn {
+  position: absolute;
+  bottom: 115px;
+  right: 10px;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding-block: 4px;
+}

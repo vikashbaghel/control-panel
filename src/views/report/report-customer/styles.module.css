@@ -1,0 +1,50 @@
+.report_page {
+  width: 100%;
+  font-family: poppins;
+  display: flex;
+  gap: 2em;
+}
+.report_page p {
+  margin: 0;
+}
+.heading {
+  font-size: 18px;
+  font-weight: 500;
+}
+.red_mark {
+  color: red;
+}
+.report_container {
+flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.report_form {
+  border-radius: 7px;
+  border: 3px solid #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7) 1.65%,
+    rgba(255, 255, 255, 0.4) 98.92%
+  );
+  box-shadow: 2px 6px 12px 4px rgba(0, 0, 0, 0.02);
+  font-size: 15px;
+  padding: 20px 20px 10px 20px;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.column {
+  display: flex;
+  gap: 1em;
+}
+.create_btn {
+  margin-block-start: 1em;
+  align-self: flex-end;
+}
+.error {
+  border-color: red !important;
+}

@@ -1,0 +1,10 @@
+.modal_header {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 15px;
+}
+.modal_para {
+  font-size: 14px;
+  font-weight: 500;
+  color: #727176;
+}

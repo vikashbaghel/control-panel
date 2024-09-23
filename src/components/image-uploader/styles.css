@@ -1,0 +1,57 @@
+.upload_container {
+  position: relative;
+  height: 100px;
+  width: auto;
+}
+.upload_text_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload_text_section > img {
+  width: 40px !important;
+  margin: 10px auto;
+}
+.upload_text_section p {
+  font-size: 12px;
+  margin: 0;
+}
+.upload_text_section .title_in_blue {
+  color: #322e80;
+}
+.upload_text_section .text_bold {
+  font-weight: 500;
+}
+
+.upload_container {
+  position: relative;
+  height: 100px;
+  width: auto;
+}
+.active_container {
+  border: 2px solid #322e80 !important;
+  border-radius: 5px;
+}
+.default_checkbox {
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  top: 5px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.upload-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-preview-icons {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+}
+.upload-preview:hover .upload-preview-icons {
+  animation: fade-in-anim 0.3s;
+  opacity: 1;
+}

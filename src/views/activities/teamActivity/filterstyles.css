@@ -1,0 +1,19 @@
+.date-picker-with-btns {
+  display: flex;
+  width: 204px;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+}
+.date-picker-with-btns .ant-picker-input {
+  flex-direction: row-reverse;
+  gap: 5px;
+  cursor: pointer;
+}
+.activity-list-table .ant-table-body {
+  height: calc(100vh - 535px);
+}
+.empty-activity-table .ant-table-body,
+.empty-activity-table .ant-table-placeholder {
+  height: calc(100vh - 475px);
+}

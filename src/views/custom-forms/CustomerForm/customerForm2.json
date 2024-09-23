@@ -1,0 +1,240 @@
+{
+  "form_name": "",
+  "included": [],
+  "sections": [
+    {
+      "name": "Business details",
+      "form_items": [
+        {
+          "status": "visible",
+          "type": "SHORT_ANSWER",
+          "is_custom": false,
+          "field_props": {
+            "name": "gstin",
+            "label": "GST No.",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Enter GST No.",
+            "maxLength": 15
+          }
+        },
+        {
+          "status": "visible",
+          "type": "SHORT_ANSWER",
+          "is_custom": false,
+          "field_props": {
+            "name": "name",
+            "label": "Business Name",
+            "required": true
+          },
+          "input_props": {
+            "placeholder": "Business Name",
+            "maxLength": 150
+          }
+        }
+      ]
+    },
+    {
+      "name": "Contact Person Details",
+      "form_items": [
+        {
+          "status": "visible",
+          "type": "SHORT_ANSWER",
+          "is_custom": false,
+          "field_props": {
+            "name": "contact_person_name",
+            "label": "Name",
+            "required": true
+          },
+          "input_props": {
+            "placeholder": "Enter Name",
+            "maxLength": 1250
+          }
+        },
+        {
+          "status": "visible",
+          "type": "MOBILE_NUMBER",
+          "is_custom": false,
+          "field_props": {
+            "name": "contact_mobile",
+            "label": "Mobile No.",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Enter Mobile No."
+          }
+        },
+        {
+          "status": "visible",
+          "type": "EMAIL_ADDRESS",
+          "is_custom": false,
+          "field_props": {
+            "name": "email",
+            "label": "E-Mail",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Enter Email"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Address",
+      "form_items": [
+        {
+          "status": "visible",
+          "type": "SHORT_ANSWER",
+          "is_custom": false,
+          "field_props": {
+            "name": "geo_address",
+            "label": "Geo Location",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Fetch Location",
+            "maxLength": 1250
+          }
+        },
+        {
+          "status": "visible",
+          "type": "SHORT_ANSWER",
+          "is_custom": false,
+          "field_props": {
+            "name": "address_line_1",
+            "label": "Name, Number, Area, Landmark",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Enter Name, Number, Area, Landmark"
+          }
+        },
+        {
+          "status": "visible",
+          "type": "SHORT_ANSWER",
+          "is_custom": false,
+          "field_props": {
+            "name": "pincode",
+            "label": "Pincode",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Enter Pincode",
+            "maxLength": 6
+          }
+        },
+        {
+          "status": "visible",
+          "type": "SHORT_ANSWER",
+          "is_custom": false,
+          "field_props": {
+            "name": "city",
+            "label": "City",
+            "required": true
+          },
+          "input_props": {
+            "placeholder": "Enter City"
+          }
+        },
+        {
+          "status": "visible",
+          "type": "DROPDOWN",
+          "is_custom": false,
+          "field_props": {
+            "name": "state",
+            "label": "State",
+            "required": true
+          },
+          "input_props": {
+            "placeholder": "Enter State"
+          }
+        },
+        {
+          "status": "visible",
+          "type": "SHORT_ANSWER",
+          "is_custom": false,
+          "field_props": {
+            "name": "territory",
+            "label": "Territory",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Enter Territory"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shop Photo",
+      "form_items": [
+        {
+          "status": "visible",
+          "type": "FILE_UPLOAD",
+          "is_custom": false,
+          "field_props": {
+            "name": "logo_image",
+            "label": "Image",
+            "required": false
+          },
+          "input_props": {
+            "maxCount": 1,
+            "accept": ".jpeg,.png,.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Credit & Payment terms",
+      "form_items": [
+        {
+          "status": "visible",
+          "type": "DROPDOWN",
+          "is_custom": false,
+          "field_props": {
+            "name": "payment_term",
+            "label": "Payment Terms",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Enter Payment Terms"
+          }
+        },
+        {
+          "status": "visible",
+          "type": "DECIMAL",
+          "is_custom": false,
+          "field_props": {
+            "name": "credit_limit",
+            "label": "Credit Limit",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Enter Credit Limit",
+            "maxLength": 9,
+            "scale": 2
+          }
+        },
+        {
+          "status": "visible",
+          "type": "DECIMAL",
+          "is_custom": false,
+          "field_props": {
+            "name": "outstanding_amount",
+            "label": "Outstanding Amount",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Enter Outstanding Amount",
+            "maxLength": 9,
+            "scale": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "Other Questions",
+      "form_items": []
+    }
+  ]
+}

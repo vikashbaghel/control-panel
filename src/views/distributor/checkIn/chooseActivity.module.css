@@ -1,0 +1,102 @@
+.modal_head {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px;
+  font-family: Poppins;
+}
+.modal_footer {
+  background: #fff;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  font-family: Poppins;
+}
+.modal_body {
+  padding: 10px 20px 20px 20px;
+  font-family: Poppins;
+}
+.modal_body > label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+.activity_group {
+  border-radius: 10px;
+}
+.activity_group > div {
+  border: 1px solid #ddd;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%),
+    linear-gradient(
+      94deg,
+      rgba(255, 255, 255, 0.7) 8.19%,
+      rgba(255, 255, 255, 0.4) 91.78%
+    );
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  color: #727176;
+  font-size: 14px;
+  font-weight: 600;
+}
+.activity_group > div > img {
+  padding-left: 20px;
+}
+.modal_label_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.modal_label_container > span:first-child {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #727176;
+  font-size: 16px;
+  font-weight: 500;
+}
+.active_activity {
+  border: 1px solid #312b81 !important;
+}
+.disabled {
+  opacity: 0.5;
+}
+
+/* CSS for select distributor modal */
+.distributor_list_container {
+  border-radius: 10px;
+  border: 1.5px solid #fff;
+  background: linear-gradient(
+    94deg,
+    rgba(255, 255, 255, 0.7) 8.19%,
+    rgba(255, 255, 255, 0.4) 91.78%
+  );
+  box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.distributor_list_option {
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #727176;
+  font-weight: 600;
+}
+.distributor_list_option_name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.active_distributor_list_option {
+  border: 1px solid #fff;
+  background: #f4f4f4;
+  color: #000000;
+}

@@ -1,0 +1,131 @@
+.login_container {
+  display: flex;
+  height: 100vh;
+}
+.login_container > div {
+  width: 50%;
+}
+.header {
+  font-size: 30px;
+  margin: 10px;
+}
+.card {
+  text-align: center;
+  margin: 20px;
+  max-width: 400px;
+  padding: 20px;
+  margin: 5% auto;
+}
+.card input {
+  width: 100%;
+    /* line-height: 35px; */
+  font-size: 15px;
+}
+.card input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.card label {
+  font-size: 15px;
+}
+.card button {
+  margin-top: 20px;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  position: relative;
+}
+.card .error {
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.footer a {
+  color: rgb(22, 119, 255);
+  text-decoration: none;
+  padding: 10px;
+}
+.footer a:hover {
+  color: rgb(113, 169, 247);
+}
+.login_container .image {
+  background-color: #1677ff;
+  background-size: cover;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+.login_container .image .google_play_buton {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.login_container .image h3 {
+  font-size: 25px;
+  margin: auto;
+  /* margin-top: 20px; */
+  width: 50%;
+}
+.login_container .image p {
+  margin: auto;
+  margin-top: 20px;
+  width: 70%;
+  font-size: 16px;
+}
+.playstore_button {
+  justify-content: center;
+}
+.org_list {
+  margin: 5px;
+  margin-inline-start: 0 !important;
+  padding: 15px 10px;
+  transition: background-color 0.2s;
+  background-color: hsl(0, 0%, 100%, 0.1);
+  border-radius: 5px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%, 0.5);
+  align-items: center;
+  position: relative;
+  border: 2px solid hsl(0, 0%, 100%, 0.3);
+}
+.org_list:hover {
+  transition: background-color 0.2s;
+  /* background-color: #494283; */
+  color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 100%);
+}
+.org_list::after {
+  content: "";
+  border-left: 2px solid hsl(0, 0%, 100%, 0.3);
+  height: 40px;
+  position: absolute;
+  left: 40px;
+  z-index: 1;
+}
+.org_list:hover::after {
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.next_button {
+  background: #0a9b11;
+  border: 2px solid transparent;
+  color: #fff;
+  width: 100px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 20px !important;
+}
+
+.next_button:hover {
+  border: 2px solid #fff !important;
+  color: #0a9b11 !important;
+}

@@ -1,0 +1,739 @@
+{
+  "id": 44106,
+  "pics_urls": [
+    "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+  ],
+  "category": "Amul",
+  "price": 100,
+  "mrp_price": 100,
+  "product_url": "uat-maamobile.mystore.digital/products/TE01",
+  "display_pic_url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg",
+  "display_pic_map": {
+    "id": 31786,
+    "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+  },
+  "pics_map": [
+    {
+      "id": 31786,
+      "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+    }
+  ],
+  "telescope_pricing": [],
+  "nanoid": "ny6Vzuc4YKwuqEoC",
+  "name": "Variant Color Test Red S",
+  "variant_name": "Red S",
+  "code": "TE01",
+  "description": "",
+  "specification": {},
+  "industry": "",
+  "segment": "",
+  "sub_segment": "",
+  "hsn_code": "1100",
+  "gst": 0,
+  "gst_exclusive": false,
+  "discount": 0,
+  "unit": "1 Unit",
+  "mrp_unit": "1 Unit",
+  "inventory": 0,
+  "packaging_unit": "",
+  "packaging_size": 0,
+  "packaging_level": [
+    {
+      "size": 100,
+      "unit": "1 Unit"
+    }
+  ],
+  "min_price": 0,
+  "max_price": 0,
+  "pics": [31786],
+  "is_show_buyer_price": true,
+  "is_out_of_stock": false,
+  "is_published": true,
+  "view_count": 0,
+  "like_count": 0,
+  "on_elasticsearch": true,
+  "elasticsearch_update_at": "2024-07-15T09:26:02.187916Z",
+  "brand": "Hawai",
+  "video_link": "",
+  "created_at": "2024-07-15T07:26:00.620981Z",
+  "updated_at": "2024-07-15T09:26:02.188328Z",
+  "organization": 306,
+  "primary_product": 44106,
+  "display_pic": 31786,
+  "created_by": 8948,
+  "updated_by": 8948,
+  "variants_data": [
+    {
+      "identifier": "O1721028057248-O1721035468630",
+      "product_id": 44106,
+      "product_data": {
+        "id": 44106,
+        "gst": 0,
+        "code": "TE01",
+        "name": "Variant Color Test Red S",
+        "pics": [31786],
+        "unit": "1 Unit",
+        "brand": "Hawai",
+        "price": 100,
+        "nanoid": "ny6Vzuc4YKwuqEoC",
+        "segment": "",
+        "category": "Amul",
+        "discount": 0,
+        "hsn_code": "1100",
+        "industry": "",
+        "mrp_unit": "1 Unit",
+        "pics_map": [
+          {
+            "id": 31786,
+            "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+          }
+        ],
+        "inventory": 0,
+        "max_price": 0,
+        "min_price": 0,
+        "mrp_price": 100,
+        "pics_urls": [
+          "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        ],
+        "created_at": "2024-07-15T07:26:00.620981Z",
+        "created_by": 8948,
+        "like_count": 0,
+        "updated_at": "2024-07-15T09:26:02.188328Z",
+        "updated_by": 8948,
+        "video_link": "",
+        "view_count": 0,
+        "description": "",
+        "display_pic": 31786,
+        "product_url": "uat-maamobile.mystore.digital/products/TE01",
+        "sub_segment": "",
+        "is_published": true,
+        "organization": 306,
+        "variant_name": "Red S",
+        "gst_exclusive": false,
+        "specification": {},
+        "packaging_size": 0,
+        "packaging_unit": "",
+        "display_pic_map": {
+          "id": 31786,
+          "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        },
+        "display_pic_url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg",
+        "is_out_of_stock": false,
+        "packaging_level": [
+          {
+            "size": 100,
+            "unit": "1 Unit"
+          }
+        ],
+        "primary_product": 44106,
+        "on_elasticsearch": true,
+        "telescope_pricing": [],
+        "is_show_buyer_price": true,
+        "elasticsearch_update_at": "2024-07-15T09:26:02.187916Z"
+      }
+    },
+    {
+      "identifier": "O1721028057248-O1721035468640",
+      "product_id": 44109,
+      "product_data": {
+        "id": 44109,
+        "gst": 0,
+        "code": "TE04",
+        "name": "Variant Color Test Red M",
+        "pics": [31786],
+        "unit": "1 Unit",
+        "brand": "Hawai",
+        "price": 100,
+        "nanoid": "w552W92YWsqANTJB",
+        "segment": null,
+        "category": "Amul",
+        "discount": 0,
+        "hsn_code": "1100",
+        "industry": null,
+        "mrp_unit": "1 Unit",
+        "pics_map": [
+          {
+            "id": 31786,
+            "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+          }
+        ],
+        "inventory": 0,
+        "max_price": 0,
+        "min_price": 0,
+        "mrp_price": 100,
+        "pics_urls": [
+          "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        ],
+        "created_at": "2024-07-15T09:26:02.383490Z",
+        "created_by": null,
+        "like_count": 0,
+        "updated_at": "2024-07-15T09:26:02.445191Z",
+        "updated_by": null,
+        "video_link": "",
+        "view_count": 0,
+        "description": "",
+        "display_pic": 31786,
+        "product_url": "uat-maamobile.mystore.digital/products/TE04",
+        "sub_segment": null,
+        "is_published": true,
+        "organization": 306,
+        "variant_name": "Red M",
+        "gst_exclusive": false,
+        "specification": {},
+        "packaging_size": 0,
+        "packaging_unit": null,
+        "display_pic_map": {
+          "id": 31786,
+          "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        },
+        "display_pic_url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg",
+        "is_out_of_stock": false,
+        "packaging_level": [
+          {
+            "size": 100,
+            "unit": "1 Unit"
+          }
+        ],
+        "primary_product": 44106,
+        "on_elasticsearch": true,
+        "telescope_pricing": [],
+        "is_show_buyer_price": true,
+        "elasticsearch_update_at": "2024-07-15T09:26:02.444900Z"
+      }
+    },
+    {
+      "identifier": "O1721028057248-O1721035471778",
+      "product_id": 44110,
+      "product_data": {
+        "id": 44110,
+        "gst": 0,
+        "code": "TE05",
+        "name": "Variant Color Test Red L",
+        "pics": [31786],
+        "unit": "1 Unit",
+        "brand": "Hawai",
+        "price": 100,
+        "nanoid": "zW7ZfzvZUvZzUFpz",
+        "segment": null,
+        "category": "Amul",
+        "discount": 0,
+        "hsn_code": "1100",
+        "industry": null,
+        "mrp_unit": "1 Unit",
+        "pics_map": [
+          {
+            "id": 31786,
+            "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+          }
+        ],
+        "inventory": 0,
+        "max_price": 0,
+        "min_price": 0,
+        "mrp_price": 100,
+        "pics_urls": [
+          "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        ],
+        "created_at": "2024-07-15T09:26:02.463048Z",
+        "created_by": null,
+        "like_count": 0,
+        "updated_at": "2024-07-15T09:26:02.507769Z",
+        "updated_by": null,
+        "video_link": "",
+        "view_count": 0,
+        "description": "",
+        "display_pic": 31786,
+        "product_url": "uat-maamobile.mystore.digital/products/TE05",
+        "sub_segment": null,
+        "is_published": true,
+        "organization": 306,
+        "variant_name": "Red L",
+        "gst_exclusive": false,
+        "specification": {},
+        "packaging_size": 0,
+        "packaging_unit": null,
+        "display_pic_map": {
+          "id": 31786,
+          "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        },
+        "display_pic_url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg",
+        "is_out_of_stock": false,
+        "packaging_level": [
+          {
+            "size": 100,
+            "unit": "1 Unit"
+          }
+        ],
+        "primary_product": 44106,
+        "on_elasticsearch": true,
+        "telescope_pricing": [],
+        "is_show_buyer_price": true,
+        "elasticsearch_update_at": "2024-07-15T09:26:02.506553Z"
+      }
+    },
+    {
+      "identifier": "O1721028057258-O1721035468630",
+      "product_id": 44107,
+      "product_data": {
+        "id": 44107,
+        "gst": 0,
+        "code": "TE02",
+        "name": "Variant Color Test Blue S",
+        "pics": [31786],
+        "unit": "1 Unit",
+        "brand": "Hawai",
+        "price": 100,
+        "nanoid": "BZ0E55PMZxUcoDMK",
+        "segment": "",
+        "category": "Amul",
+        "discount": 0,
+        "hsn_code": "1100",
+        "industry": "",
+        "mrp_unit": "1 Unit",
+        "pics_map": [
+          {
+            "id": 31786,
+            "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+          }
+        ],
+        "inventory": 0,
+        "max_price": 0,
+        "min_price": 0,
+        "mrp_price": 100,
+        "pics_urls": [
+          "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        ],
+        "created_at": "2024-07-15T07:26:01.105993Z",
+        "created_by": 8948,
+        "like_count": 0,
+        "updated_at": "2024-07-15T09:26:02.551408Z",
+        "updated_by": 8948,
+        "video_link": "",
+        "view_count": 0,
+        "description": "",
+        "display_pic": 31786,
+        "product_url": "uat-maamobile.mystore.digital/products/TE02",
+        "sub_segment": "",
+        "is_published": true,
+        "organization": 306,
+        "variant_name": "Blue S",
+        "gst_exclusive": false,
+        "specification": {},
+        "packaging_size": 0,
+        "packaging_unit": "",
+        "display_pic_map": {
+          "id": 31786,
+          "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        },
+        "display_pic_url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg",
+        "is_out_of_stock": false,
+        "packaging_level": [
+          {
+            "size": 100,
+            "unit": "1 Unit"
+          }
+        ],
+        "primary_product": 44106,
+        "on_elasticsearch": true,
+        "telescope_pricing": [],
+        "is_show_buyer_price": true,
+        "elasticsearch_update_at": "2024-07-15T09:26:02.551117Z"
+      }
+    },
+    {
+      "identifier": "O1721028057258-O1721035468640",
+      "product_id": 44111,
+      "product_data": {
+        "id": 44111,
+        "gst": 0,
+        "code": "TE06",
+        "name": "Variant Color Test Blue M",
+        "pics": [31786],
+        "unit": "1 Unit",
+        "brand": "Hawai",
+        "price": 100,
+        "nanoid": "PARBgR5M3SJyja7H",
+        "segment": null,
+        "category": "Amul",
+        "discount": 0,
+        "hsn_code": "1100",
+        "industry": null,
+        "mrp_unit": "1 Unit",
+        "pics_map": [
+          {
+            "id": 31786,
+            "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+          }
+        ],
+        "inventory": 0,
+        "max_price": 0,
+        "min_price": 0,
+        "mrp_price": 100,
+        "pics_urls": [
+          "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        ],
+        "created_at": "2024-07-15T09:26:02.566019Z",
+        "created_by": null,
+        "like_count": 0,
+        "updated_at": "2024-07-15T09:26:02.602636Z",
+        "updated_by": null,
+        "video_link": "",
+        "view_count": 0,
+        "description": "",
+        "display_pic": 31786,
+        "product_url": "uat-maamobile.mystore.digital/products/TE06",
+        "sub_segment": null,
+        "is_published": true,
+        "organization": 306,
+        "variant_name": "Blue M",
+        "gst_exclusive": false,
+        "specification": {},
+        "packaging_size": 0,
+        "packaging_unit": null,
+        "display_pic_map": {
+          "id": 31786,
+          "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        },
+        "display_pic_url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg",
+        "is_out_of_stock": false,
+        "packaging_level": [
+          {
+            "size": 100,
+            "unit": "1 Unit"
+          }
+        ],
+        "primary_product": 44106,
+        "on_elasticsearch": true,
+        "telescope_pricing": [],
+        "is_show_buyer_price": true,
+        "elasticsearch_update_at": "2024-07-15T09:26:02.602354Z"
+      }
+    },
+    {
+      "identifier": "O1721028057258-O1721035471778",
+      "product_id": 44112,
+      "product_data": {
+        "id": 44112,
+        "gst": 0,
+        "code": "TE07",
+        "name": "Variant Color Test Blue L",
+        "pics": [31786],
+        "unit": "1 Unit",
+        "brand": "Hawai",
+        "price": 100,
+        "nanoid": "h2ASDG6mhZrdPg6Y",
+        "segment": null,
+        "category": "Amul",
+        "discount": 0,
+        "hsn_code": "1100",
+        "industry": null,
+        "mrp_unit": "1 Unit",
+        "pics_map": [
+          {
+            "id": 31786,
+            "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+          }
+        ],
+        "inventory": 0,
+        "max_price": 0,
+        "min_price": 0,
+        "mrp_price": 100,
+        "pics_urls": [
+          "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        ],
+        "created_at": "2024-07-15T09:26:02.617352Z",
+        "created_by": null,
+        "like_count": 0,
+        "updated_at": "2024-07-15T09:26:02.652616Z",
+        "updated_by": null,
+        "video_link": "",
+        "view_count": 0,
+        "description": "",
+        "display_pic": 31786,
+        "product_url": "uat-maamobile.mystore.digital/products/TE07",
+        "sub_segment": null,
+        "is_published": true,
+        "organization": 306,
+        "variant_name": "Blue L",
+        "gst_exclusive": false,
+        "specification": {},
+        "packaging_size": 0,
+        "packaging_unit": null,
+        "display_pic_map": {
+          "id": 31786,
+          "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        },
+        "display_pic_url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg",
+        "is_out_of_stock": false,
+        "packaging_level": [
+          {
+            "size": 100,
+            "unit": "1 Unit"
+          }
+        ],
+        "primary_product": 44106,
+        "on_elasticsearch": true,
+        "telescope_pricing": [],
+        "is_show_buyer_price": true,
+        "elasticsearch_update_at": "2024-07-15T09:26:02.652026Z"
+      }
+    },
+    {
+      "identifier": "O1721028060872-O1721035468630",
+      "product_id": 44108,
+      "product_data": {
+        "id": 44108,
+        "gst": 0,
+        "code": "TE03",
+        "name": "Variant Color Test Green S",
+        "pics": [31786],
+        "unit": "1 Unit",
+        "brand": "Hawai",
+        "price": 100,
+        "nanoid": "XtASIVCnh5wco3ka",
+        "segment": "",
+        "category": "Amul",
+        "discount": 0,
+        "hsn_code": "1100",
+        "industry": "",
+        "mrp_unit": "1 Unit",
+        "pics_map": [
+          {
+            "id": 31786,
+            "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+          }
+        ],
+        "inventory": 0,
+        "max_price": 0,
+        "min_price": 0,
+        "mrp_price": 100,
+        "pics_urls": [
+          "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        ],
+        "created_at": "2024-07-15T07:26:01.150608Z",
+        "created_by": 8948,
+        "like_count": 0,
+        "updated_at": "2024-07-15T09:26:02.690465Z",
+        "updated_by": 8948,
+        "video_link": "",
+        "view_count": 0,
+        "description": "",
+        "display_pic": 31786,
+        "product_url": "uat-maamobile.mystore.digital/products/TE03",
+        "sub_segment": "",
+        "is_published": true,
+        "organization": 306,
+        "variant_name": "Green S",
+        "gst_exclusive": false,
+        "specification": {},
+        "packaging_size": 0,
+        "packaging_unit": "",
+        "display_pic_map": {
+          "id": 31786,
+          "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        },
+        "display_pic_url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg",
+        "is_out_of_stock": false,
+        "packaging_level": [
+          {
+            "size": 100,
+            "unit": "1 Unit"
+          }
+        ],
+        "primary_product": 44106,
+        "on_elasticsearch": true,
+        "telescope_pricing": [],
+        "is_show_buyer_price": true,
+        "elasticsearch_update_at": "2024-07-15T09:26:02.690081Z"
+      }
+    },
+    {
+      "identifier": "O1721028060872-O1721035468640",
+      "product_id": 44113,
+      "product_data": {
+        "id": 44113,
+        "gst": 0,
+        "code": "TE08",
+        "name": "Variant Color Test Green M",
+        "pics": [31786],
+        "unit": "1 Unit",
+        "brand": "Hawai",
+        "price": 100,
+        "nanoid": "DaqmAUfEhMzf1woo",
+        "segment": null,
+        "category": "Amul",
+        "discount": 0,
+        "hsn_code": "1100",
+        "industry": null,
+        "mrp_unit": "1 Unit",
+        "pics_map": [
+          {
+            "id": 31786,
+            "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+          }
+        ],
+        "inventory": 0,
+        "max_price": 0,
+        "min_price": 0,
+        "mrp_price": 100,
+        "pics_urls": [
+          "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        ],
+        "created_at": "2024-07-15T09:26:02.707559Z",
+        "created_by": null,
+        "like_count": 0,
+        "updated_at": "2024-07-15T09:26:02.741603Z",
+        "updated_by": null,
+        "video_link": "",
+        "view_count": 0,
+        "description": "",
+        "display_pic": 31786,
+        "product_url": "uat-maamobile.mystore.digital/products/TE08",
+        "sub_segment": null,
+        "is_published": true,
+        "organization": 306,
+        "variant_name": "Green M",
+        "gst_exclusive": false,
+        "specification": {},
+        "packaging_size": 0,
+        "packaging_unit": null,
+        "display_pic_map": {
+          "id": 31786,
+          "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        },
+        "display_pic_url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg",
+        "is_out_of_stock": false,
+        "packaging_level": [
+          {
+            "size": 100,
+            "unit": "1 Unit"
+          }
+        ],
+        "primary_product": 44106,
+        "on_elasticsearch": true,
+        "telescope_pricing": [],
+        "is_show_buyer_price": true,
+        "elasticsearch_update_at": "2024-07-15T09:26:02.741232Z"
+      }
+    },
+    {
+      "identifier": "O1721028060872-O1721035471778",
+      "product_id": 44114,
+      "product_data": {
+        "id": 44114,
+        "gst": 0,
+        "code": "TE09",
+        "name": "Variant Color Test Green L",
+        "pics": [31786],
+        "unit": "1 Unit",
+        "brand": "Hawai",
+        "price": 100,
+        "nanoid": "qMLWTScYzxRs0VWZ",
+        "segment": null,
+        "category": "Amul",
+        "discount": 0,
+        "hsn_code": "1100",
+        "industry": null,
+        "mrp_unit": "1 Unit",
+        "pics_map": [
+          {
+            "id": 31786,
+            "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+          }
+        ],
+        "inventory": 0,
+        "max_price": 0,
+        "min_price": 0,
+        "mrp_price": 100,
+        "pics_urls": [
+          "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        ],
+        "created_at": "2024-07-15T09:26:02.759371Z",
+        "created_by": null,
+        "like_count": 0,
+        "updated_at": "2024-07-15T09:26:02.783032Z",
+        "updated_by": null,
+        "video_link": "",
+        "view_count": 0,
+        "description": "",
+        "display_pic": 31786,
+        "product_url": "uat-maamobile.mystore.digital/products/TE09",
+        "sub_segment": null,
+        "is_published": true,
+        "organization": 306,
+        "variant_name": "Green L",
+        "gst_exclusive": false,
+        "specification": {},
+        "packaging_size": 0,
+        "packaging_unit": null,
+        "display_pic_map": {
+          "id": 31786,
+          "url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg"
+        },
+        "display_pic_url": "https://uat-rupyz-storage.rupyz.com/static/documents/pub/4d0910b4b7bfcab900bb65144adf4ebb_white.jpg",
+        "is_out_of_stock": false,
+        "packaging_level": [
+          {
+            "size": 100,
+            "unit": "1 Unit"
+          }
+        ],
+        "primary_product": 44106,
+        "on_elasticsearch": true,
+        "telescope_pricing": [],
+        "is_show_buyer_price": true,
+        "elasticsearch_update_at": "2024-07-15T09:26:02.782748Z"
+      }
+    }
+  ],
+  "variants": [
+    {
+      "name": "Colour",
+      "options": [
+        {
+          "name": "Red",
+          "payload": {
+            "color": "#ff0000"
+          },
+          "option_id": "O1721028057248"
+        },
+        {
+          "name": "Blue",
+          "payload": {
+            "color": "#0032ff"
+          },
+          "option_id": "O1721028057258"
+        },
+        {
+          "name": "Green",
+          "payload": {
+            "color": "#04ff00"
+          },
+          "option_id": "O1721028060872"
+        }
+      ],
+      "variant_id": "V1721028057258"
+    },
+    {
+      "name": "Size",
+      "options": [
+        {
+          "name": "S",
+          "payload": {},
+          "option_id": "O1721035468630"
+        },
+        {
+          "name": "M",
+          "payload": {},
+          "option_id": "O1721035468640"
+        },
+        {
+          "name": "L",
+          "payload": {},
+          "option_id": "O1721035471778"
+        }
+      ],
+      "variant_id": "V1721035468640"
+    }
+  ],
+  "variant_metadata": {}
+}

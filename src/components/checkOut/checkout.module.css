@@ -1,0 +1,23 @@
+.modal_header {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.modal_body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.modal_button_group {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-end;
+}
+.modal_button_group button {
+  width: 100%;
+  border-radius: 4px;
+}

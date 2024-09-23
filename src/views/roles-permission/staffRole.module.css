@@ -1,0 +1,18 @@
+.prefence_link {
+  color: #001a72;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.checkList_group {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.checkList_group > div {
+  margin-left: 20px;
+}

@@ -1,0 +1,43 @@
+.payment_container {
+  padding: 0 20px;
+}
+.payment_container label {
+  font-family: Poppins;
+  font-size: 14px;
+  margin: 0 !important;
+  font-weight: 500;
+}
+
+.whatsapp_header {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.whatsapp_header img {
+  opacity: 0.3;
+  margin: 5;
+}
+.whatsapp_header div {
+  color: #322e80;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.whatsapp_body {
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px 20px 20px;
+}
+.whatsapp_body > div:first-child {
+  display: flex;
+  align-items: center;
+}
+.whatsapp_body button {
+  border-radius: 3px !important;
+  padding: 7px 30px;
+}

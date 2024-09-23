@@ -1,0 +1,125 @@
+.team_targets_page {
+  padding: 0.5em 2em;
+}
+.team_targets_page h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #fff;
+  font-weight: 500;
+}
+.header_options {
+  display: flex;
+  align-items: flex-end;
+  gap: 3em;
+}
+.header label {
+  width: 25em;
+}
+.header label input {
+  width: 100%;
+}
+.target_names {
+  cursor: pointer;
+  color: #727176;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+  margin: 0;
+  text-transform: capitalize;
+}
+.active {
+  color: #322e80;
+  border-bottom: 3px solid #322e80;
+  cursor: pointer;
+}
+
+.target_card {
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7) 1.65%,
+    rgba(255, 255, 255, 0.4) 98.92%
+  );
+  box-shadow: 2px 6px 12px 4px rgba(0, 0, 0, 0.02);
+  margin-top: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.staff_name_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.staff_name_heading p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.staff_name_heading img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.target_name_heading {
+  display: flex;
+  justify-content: space-between;
+}
+.target_name {
+  color: #322e80;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  gap: 0.5em;
+}
+.target_name span {
+  color: #727176;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 14px;
+  font-weight: 400;
+}
+.header_edit_options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  color: #464646;
+  font-size: 15px;
+  font-weight: 400;
+}
+.loop_header_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3px;
+}
+.empty_target_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 8em;
+}
+.pagination {
+  padding-block-start: 2em;
+}

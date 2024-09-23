@@ -1,0 +1,23 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_966_43871)">
+<circle cx="34" cy="30" r="22" fill="url(#paint0_linear_966_43871)" shape-rendering="crispEdges"/>
+<circle cx="34" cy="30" r="21" stroke="white" stroke-width="2" shape-rendering="crispEdges"/>
+</g>
+<path d="M43.6 31.2316H35.2V30.0316H38.8V27.6316C38.7972 26.8844 38.62 26.1482 38.2825 25.4815C37.945 24.8149 37.4566 24.2362 36.856 23.7916C37.2651 23.2586 37.5168 22.6216 37.5827 21.953C37.6485 21.2843 37.5259 20.6105 37.2288 20.0078C36.9316 19.4052 36.4717 18.8977 35.9011 18.5429C35.3305 18.1881 34.6719 18 34 18C33.3281 18 32.6695 18.1881 32.0989 18.5429C31.5283 18.8977 31.0684 19.4052 30.7712 20.0078C30.4741 20.6105 30.3515 21.2843 30.4173 21.953C30.4832 22.6216 30.7349 23.2586 31.144 23.7916C30.5434 24.2362 30.055 24.8149 29.7175 25.4815C29.38 26.1482 29.2028 26.8844 29.2 27.6316V30.0316H32.8V31.2316H24.4V34.8316H22V42.0316H29.2V34.8316H26.8V33.6316H32.8V34.8316H30.4V42.0316H37.6V34.8316H35.2V33.6316H41.2V34.8316H38.8V42.0316H46V34.8316H43.6V31.2316Z" fill="white"/>
+<defs>
+<filter id="filter0_d_966_43871" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="6"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.494118 0 0 0 0 0.694118 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_966_43871"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_966_43871" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_966_43871" x1="15.4048" y1="15.15" x2="53.6378" y2="16.7206" gradientUnits="userSpaceOnUse">
+<stop stop-color="#322E80"/>
+<stop offset="1" stop-color="#322E80" stop-opacity="0.7"/>
+</linearGradient>
+</defs>
+</svg>

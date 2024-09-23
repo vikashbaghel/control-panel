@@ -1,0 +1,19 @@
+.container {
+  /* Set a fixed height and width for the container */
+  height: 300px;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* For WebKit-based browsers (Chrome, Safari) */
+.container::-webkit-scrollbar {
+  width: 0px; /* Set the width of the scrollbar */
+  display: none;
+}
+
+.purpose {
+  width: 100px; /* Set the width of the container */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflowed content */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+}

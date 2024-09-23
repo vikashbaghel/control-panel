@@ -1,0 +1,35 @@
+/*          AddItemsButton         */
+.add_item_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #727176;
+  background-color: #f4f4f4;
+  border: 2px solid #ffffff;
+}
+.add_item_btn_icon {
+  padding: 7px;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  border-radius: 100%;
+  background: #727176;
+  justify-content: center;
+}
+
+/*         removeIcon           */
+.remove_icon {
+  background: #f4f4f4;
+  filter: grayscale(1) opacity(0.7);
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  align-self: center;
+}

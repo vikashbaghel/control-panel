@@ -1,0 +1,132 @@
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+  justify-content: space-between;
+}
+
+.card_container > div {
+  width: 48%;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  background: linear-gradient(
+    121deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  ) !important;
+}
+
+.dashboard_card {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.beatroute_container {
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.35) 1.65%,
+    rgba(255, 255, 255, 0.2) 98.92%
+  );
+
+  width: 100%;
+  margin-bottom: 25px;
+  font-family: Poppins;
+}
+
+.beat_header {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.beat_body {
+  border-radius: 7px;
+  border: 3px solid #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7) 1.65%,
+    rgba(255, 255, 255, 0.4) 98.92%
+  );
+  box-shadow: 2px 6px 12px 4px rgba(0, 0, 0, 0.02);
+  padding: 15px 20px;
+  position: relative;
+}
+
+.beat_body_head,
+.beat_body_head > span:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.beat_body_sub_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 28px;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.beat_name {
+  color: #312b81;
+  text-decoration-line: underline;
+}
+
+.date {
+  color: #727176;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.beat_body_table {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.beat_body_table > div > div {
+  margin-top: 10px;
+  text-align: end;
+}
+
+.table_name {
+  display: flex;
+  align-items: center;
+}
+
+.beat_body_table > div > div:first-child {
+  font-size: 15px;
+  text-align: start;
+}
+
+.beat_footer {
+  color: #001a72;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  padding: 15px 20px;
+}
+
+.beat_cancel_tag {
+  border-radius: 0px 0px 10px 10px;
+  background: #f00;
+  color: #fff;
+  padding: 0px 20px;
+  font-size: 10px;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -35px;
+  top: 39px;
+}

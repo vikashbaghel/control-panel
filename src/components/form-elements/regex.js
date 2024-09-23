@@ -1,0 +1,15 @@
+export const regex = {
+  num: /^[0-9]*$/,
+  alpha: /^[A-Za-z\s]*$/,
+  alnum: /^[a-zA-Z0-9]*$/,
+  bankName: /^[a-zA-Z./ ]*$/,
+  aplhaDash: /^[a-zA-Z-. ]*$/,
+  alnumSpace: /^[a-zA-Z0-9 ]*$/,
+  city: /^[a-zA-Z0-9#\/\(\)_,.&\-\s]*$/,
+  businessName: /^[0-9a-zA-Z#/(),%_:+.\-&\s]*$/,
+  email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/,
+  pan: /^([a-zA-Z]){5}([0-9]){4}([a-zA-Z]){1}?$/,
+  unitName: /^[a-zA-Z0-9#\/(),.+\-:&% ]*$/,
+  url: /^(http(s)?:\/\/.)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/,
+  youtubeUrl: /^https:\/\/www\.youtube\.com\/watch\?v=/,
+};

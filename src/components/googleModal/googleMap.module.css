@@ -1,0 +1,27 @@
+.customer_address {
+  color: #0886d2;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 10px;
+  line-break: anywhere;
+}
+.customer_address:hover {
+  color: #0886d2;
+}
+
+.link_address {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.remove_button {
+  color: #f00;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  cursor: pointer;
+}

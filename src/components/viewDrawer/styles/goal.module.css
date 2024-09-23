@@ -1,0 +1,294 @@
+.view_header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.view_header > div {
+  width: 50%;
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-left: 2px solid #ddd;
+  cursor: pointer;
+}
+.view_header .active {
+  background: #ededed;
+  color: #868686;
+  transition: all 0.5s;
+}
+
+.goal_selecter {
+  padding: 10px 20px;
+}
+.goal_selecter label,
+.view_footer label,
+label {
+  font-size: 17px;
+  font-weight: 600;
+}
+.goal_selecter > div {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.goal_selecter > div > div {
+  width: 100%;
+}
+.goal_selecter input {
+  border: none;
+  width: 100%;
+  color: rgb(53, 53, 53);
+  padding: 10px;
+  outline: none;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  border: none;
+}
+
+.goal_selecter span {
+  border-left: 1px solid #ddd;
+  /* width: 3.5%; */
+  margin: auto;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+
+.name_list {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.name_list li {
+  margin: 5px 10px;
+  width: 46%;
+  font-weight: 600;
+}
+.name_list li:nth-child(odd) {
+  width: 50%;
+}
+.name_list li:nth-child(even) {
+  width: 40%;
+}
+.name_list li img {
+  margin-left: 15px;
+  cursor: pointer;
+  scale: 0.9;
+}
+
+.view_footer,
+.custom_goals {
+  margin: 20px;
+}
+.view_footer {
+  margin-bottom: 100px;
+}
+.view_footer > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.view_footer > div > div {
+  width: 110%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+.view_footer span {
+  margin-left: 20px;
+}
+
+.input_group > div,
+.input_checkbox_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input_group > div {
+  margin: 8px 10px;
+}
+
+.input_group .input_control {
+  width: 50%;
+}
+.input_control_icon {
+  width: 53.8%;
+  display: flex;
+  align-items: center;
+}
+.input_control_icon > samp {
+  /* position: absolute; */
+  border: 1px solid #d9d9d9;
+  border-right: none;
+  padding: 9.9px 20px;
+  background-color: #f0efef;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #979797;
+  font-size: 15px;
+  font-weight: 500;
+}
+.input_control_icon .active {
+  background-color: #fff;
+}
+.input_control_icon > input {
+  width: 80%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.input_checkbox_list > div {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.input_checkbox_list > div > span {
+  font-size: 13px;
+  color: #c7c7c7;
+  font-weight: 400;
+}
+
+.custom_footer {
+  display: flex;
+  margin: 20px 20px 10px 20px;
+}
+.custom_footer > div {
+  width: 100%;
+  margin: 10px;
+}
+.custom_footer > div > div {
+  margin: 10px 0px;
+}
+.custom_footer_checkbox_group {
+  margin: 0 40px;
+  margin-bottom: 100px;
+}
+.custom_footer_checkbox_group > span {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Create goal CSS */
+.create_goal_footer {
+  padding: 20px;
+  border-top: 1px solid #d9d9d9;
+}
+.create_goal_footer > div {
+  padding-top: 10px;
+}
+
+/* botton */
+.footer_btn {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.footer_btn > button {
+  margin: 10px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* DropDown in assign goal */
+.dropdown {
+  position: absolute;
+  width: 93.5%;
+  background-color: #fdfdfd;
+  z-index: 2;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.1s ease-in-out;
+  top: 76px;
+}
+.active {
+  transform: scaleY(1);
+  top: 76px;
+}
+.dropdown ul {
+  font-size: 15px;
+  font-weight: 500;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dropdown li {
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.dropdown li:hover {
+  background: #ededed;
+  transition: all 0.1s;
+}
+
+.dropdown_icon {
+  margin-left: 15px;
+}
+
+.target_table {
+  position: absolute;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.2s ease-in-out;
+  z-index: 2;
+}
+.active_table {
+  transform: scaleY(1);
+  position: relative;
+  top: 15px;
+}
+.target_table > table {
+  width: 100%;
+  text-align: left;
+}
+.target_table thead th {
+  border-bottom: 2px solid #f0f0f0;
+}
+.target_table td {
+  line-height: 30px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.product_target_list {
+  transform-origin: top;
+  transition: transform 0.3s, height 0.3s ease;
+}
+.active_product_list {
+  height: 0;
+  transform: scaleY(0);
+}
+.product_target_list > div > div {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #868686;
+}
+.product_metrics_list {
+  display: flex;
+  justify-content: space-between;
+}
+.product_metrics_list > div {
+  width: 18%;
+  padding: 5px 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.product_metrics_list > div:first-child {
+  width: 24.5%;
+}

@@ -1,0 +1,36 @@
+{
+"payment":{
+ "color":{
+    "Dishonour":"red",
+    "Approved":"green",
+    "default":"#727176"
+    },
+ "background":{
+    "Dishonour":"#FFF1F0",
+    "Approved":"#F6FFED",
+    "default":"#F4F4F4"
+    }
+ },
+"order":{
+ "color":{
+    "Received":"#1D97F5",
+    "Approved":"#F1A248",
+    "Processing":"#F1A248",
+    "Ready To Dispatch":"#F1A248",
+    "Shipped":"#288948",
+    "Partial Shipped":"#288948",
+    "Delivered":"#288948",
+    "Rejected":"#F44147"
+    },
+ "background":{
+    "Received":"#F0F8FE",
+    "Approved":"#FEF8F1",
+    "Processing":"#FEF8F1",
+    "Ready To Dispatch":"#FEF8F1",
+    "Shipped":"#EEFDF3",
+    "Partial Shipped":"#EEFDF3",
+    "Delivered":"#EEFDF3",
+    "Rejected":"#FEF0F1"
+    }
+ }
+} 

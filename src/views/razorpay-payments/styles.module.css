@@ -1,0 +1,49 @@
+.payments_page {
+  padding: 1.5em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.payments_page h2 {
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+.flex_5 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*           payment details drawer          */
+.drawer_title {
+  text-align: center;
+}
+.drawer_body {
+  font-family: poppins;
+  color: #727176;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  row-gap: 1.5em;
+  padding: 24px;
+}
+.drawer_body p {
+  margin: 0;
+}
+.link {
+  color: #322e80;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+.divider {
+  background: #fff;
+  height: 2px;
+}

@@ -1,0 +1,161 @@
+.beat_list {
+  padding-top: 1.5em;
+  padding-inline: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.beat_list h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+.customer_image {
+  width: 40px;
+  height: 40px;
+}
+.space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_center {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.bold_black {
+  font-weight: 600;
+  color: #000;
+}
+
+/*       add/edit form        */
+.form_heading {
+  padding-block: 1em;
+  font-family: Poppins;
+  text-align: center;
+}
+.form_footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 0 0 10px 10px;
+}
+.beat_form {
+  padding: 1em;
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.beat_form p {
+  margin: 0;
+}
+.form_label {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  gap: 0.5em;
+}
+.right_arrow {
+  transform: rotate(180deg);
+  filter: invert(20%) sepia(15%) saturate(6969%) hue-rotate(226deg)
+    brightness(87%) contrast(101%);
+  cursor: pointer;
+}
+.error {
+  position: absolute;
+  color: red;
+  top: 100%;
+}
+
+/*           add customers form         */
+.tab_selection {
+  display: flex;
+  gap: 2em;
+  background: linear-gradient(
+    94deg,
+    rgba(255, 255, 255, 0.7) 8.19%,
+    rgba(255, 255, 255, 0.4) 91.78%
+  );
+  box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.05);
+  padding-inline: 2em;
+  font-weight: 600;
+}
+.tab_selection p {
+  margin: 0;
+  padding-block: 0.5em;
+  cursor: pointer;
+}
+.add_customers_page {
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.assign_list_box {
+  display: flex;
+  gap: 1em;
+}
+.assign_list_box p {
+  margin: 0;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-family: Poppins;
+}
+.customer_card {
+  width: 100%;
+  display: flex;
+  border: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+
+  background: linear-gradient(
+    94deg,
+    rgba(255, 255, 255, 0.7) 8.19%,
+    rgba(255, 255, 255, 0.4) 91.78%
+  );
+  overflow: hidden;
+}
+.side_banner {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+}
+.customer_info {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  gap: 1em;
+}
+.customer_details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.text_overflow {
+  text-transform: capitalize;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sub_customers_count {
+  text-align: center;
+  color: #312b81;
+  text-decoration: underline;
+  padding-block: 0.2em;
+  font-weight: 500;
+  cursor: pointer;
+}

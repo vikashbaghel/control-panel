@@ -1,0 +1,66 @@
+.header {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.details_group_pkg,
+.details_group_brand,
+.details_group_code,
+.details_group_hsn,
+.details_group_mrp,
+.details_group_price,
+.details_group_gst {
+  display: flex;
+  margin: 20px 0;
+  font-size: 16px;
+}
+.details_group_pkg > div:first-child,
+.details_group_brand > div:first-child,
+.details_group_code > div:first-child,
+.details_group_hsn > div:first-child,
+.details_group_mrp > div:first-child,
+.details_group_price > div:first-child,
+.details_group_gst > div:first-child {
+  width: 25%;
+  color: #727176;
+  font-size: 16px;
+}
+.packaging_level {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.details_group_gst {
+  color: #e10000;
+}
+.details_group_mrp > div:last-child,
+.details_group_price > div:last-child {
+  font-weight: 500;
+}
+.details_group_description div,
+.details_group_specification > div:first-child {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.details_group_description p {
+  color: #727176;
+  font-size: 16px;
+}
+.details_group_specification {
+  font-size: 16px;
+}
+.details_group_specification .specification_list {
+  display: flex;
+  margin: 20px 0;
+  font-size: 16px;
+}
+.details_group_specification .specification_list span:first-child {
+  width: 25%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #727176;
+}
+.details_group_specification .specification_list span:last-child {
+  font-weight: 500;
+}

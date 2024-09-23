@@ -1,0 +1,199 @@
+.reminder_container {
+  position: absolute;
+  top: -100px;
+  right: -120px;
+  opacity: 0;
+  transition: all 0.2s;
+  /* transition-delay: 0.2s; */
+  scale: 0;
+  z-index: 0;
+  overflow: auto;
+  width: 400px;
+  max-height: 600px;
+  line-height: normal;
+  border-radius: 0px 0px 10px 10px;
+  background: linear-gradient(
+      136deg,
+      #fefcfc -0.14%,
+      #fcf2f6 26.68%,
+      #ebe7f3 60.17%,
+      #e4f5f9 99.61%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.7) 1.65%,
+      rgba(255, 255, 255, 0.4) 98.92%
+    );
+  box-shadow: 0px 4px 31px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(40px);
+  font-family: Poppins;
+}
+
+.isOpen {
+  top: 42px !important;
+  opacity: 1;
+  z-index: 2;
+  scale: 1;
+  top: 42px;
+  transition: all 0.3s;
+  transition-delay: 0.2s;
+  transition-property: opacity;
+}
+
+.header {
+  color: #000;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.header img {
+  width: 20px;
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.calender_list {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  right: 15px;
+}
+
+.filter_conatiner {
+  display: flex;
+  gap: 20px;
+  /* justify-content: right; */
+  padding: 20px 20px;
+  align-items: center;
+}
+
+.search {
+  position: relative;
+}
+
+.search svg {
+  position: absolute;
+  top: 12px;
+  color: #757575;
+  right: 10px;
+  background: #fff;
+}
+
+.header_date {
+  color: #727176;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0px 15px;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1.5px solid #fff;
+  background: linear-gradient(
+    94deg,
+    rgba(255, 255, 255, 0.7) 8.19%,
+    rgba(255, 255, 255, 0.4) 91.78%
+  );
+  box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.06);
+  margin: 10px 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.card > div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: 15px;
+}
+
+.card_head {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card_sub_head {
+  color: #727176;
+  font-size: 14px;
+  line-break: anywhere;
+}
+
+.card_time {
+  color: #727176;
+  font-size: 12px;
+}
+
+.card_message {
+  color: #727176;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+  word-break: break-word;
+}
+
+.modal_container {
+  padding: 10px 30px;
+  font-family: Poppins;
+}
+
+.modal_head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_head > div:first-child {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal_time_stamp {
+  color: #727176;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal_comment {
+  margin-top: 15px;
+}
+
+.modal_comment label,
+.modal_img label {
+  color: #727176;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.empty_comment {
+  color: #727176;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  margin-top: -60px;
+}
+
+.modal_img {
+  margin-top: 20px;
+}
+.modal_img label {
+  display: block;
+}

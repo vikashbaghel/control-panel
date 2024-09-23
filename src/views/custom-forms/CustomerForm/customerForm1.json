@@ -1,0 +1,63 @@
+{
+  "form_name": "",
+  "included": [],
+  "sections": [
+    {
+      "name": "Customer level & type",
+      "form_items": [
+        {
+          "status": "visible",
+          "type": "DROPDOWN",
+          "is_custom": false,
+          "field_props": {
+            "name": "customer_level",
+            "label": "Customer Level",
+            "required": true
+          },
+          "input_props": {
+            "placeholder": "Choose Customer Level"
+          }
+        },
+        {
+          "status": "visible",
+          "type": "DROPDOWN",
+          "is_custom": false,
+          "field_props": {
+            "name": "select_parents",
+            "label": "Parent Name",
+            "required": true
+          },
+          "input_props": {
+            "placeholder": "Parent Name"
+          }
+        },
+        {
+          "status": "visible",
+          "type": "MOBILE_NUMBER",
+          "is_custom": false,
+          "field_props": {
+            "name": "mobile",
+            "label": "Whatsapp Number",
+            "required": true
+          },
+          "input_props": {
+            "placeholder": "Whatsapp Number"
+          }
+        },
+        {
+          "status": "visible",
+          "type": "DROPDOWN",
+          "is_custom": false,
+          "field_props": {
+            "name": "customer_type",
+            "label": "Customer Type",
+            "required": false
+          },
+          "input_props": {
+            "placeholder": "Select Customer Type"
+          }
+        }
+      ]
+    }
+  ]
+}

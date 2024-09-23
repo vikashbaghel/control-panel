@@ -1,0 +1,215 @@
+.scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.scroll-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.product-layout .ant-layout-sider {
+  background: none;
+}
+.product-layout .ant-menu-root {
+  border-radius: 10px;
+  color: "#727176";
+}
+.product-layout .ant-menu-submenu-title {
+  color: #727176;
+  font-weight: 500;
+}
+.product-layout .ant-checkbox-wrapper {
+  color: #0d0d0d;
+  font-weight: 500;
+}
+.picture-sorting .ant-menu-submenu-title {
+  padding-left: 12px !important;
+  color: #727176;
+}
+.picture-sorting .ant-menu-item {
+  padding-left: 12px !important;
+  height: 200px;
+}
+.picture-sorting .ant-menu-sub {
+  max-height: 200px; /* Adjust this height as necessary */
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.picture-sorting .ant-checkbox-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.picture-sorting .ant-checkbox {
+  margin-left: auto;
+}
+.picture-sorting .ant-input {
+  border-radius: 0px;
+  border: 0px;
+}
+.search_bar button {
+  display: none;
+}
+
+.product-layout {
+  display: flex;
+  gap: 15px;
+  height: 100%;
+}
+.product-layout .picture-list {
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  overflow: auto;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.gallery-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  background: linear-gradient(126deg, #322e80 0%, rgba(50, 46, 128, 0.7) 100%);
+  cursor: pointer;
+  width: 400px;
+}
+.line {
+  margin: 10px 0;
+  font-size: 16px;
+  align-items: baseline;
+  display: flex;
+  gap: 11px;
+  font-weight: 500;
+}
+
+.title {
+  color: gray;
+  width: 37%;
+}
+
+.gallery-modal .ant-modal-content {
+  border-radius: 0px;
+  width: 800px;
+}
+.pic-detail {
+  margin-right: 16px;
+}
+.filter_container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #727176;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  gap: 1em;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.range-picker {
+  border-radius: 0;
+  border: "blue";
+}
+.range-picker:hover {
+  border: none;
+  box-shadow: none;
+}
+.range-picker:focus-within {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.infinite-scroll-component {
+  height: 250px;
+  overflow: scroll;
+  scrollbar-width: none !important;
+}
+.picture-sorting {
+  background-color: white;
+  border: none;
+}
+.picture-sorting .ant-collapse-header {
+  flex-direction: row-reverse;
+}
+.picture-sorting .ant-collapse-expand-icon {
+  display: none !important;
+}
+
+.picture-sorting .ant-collapse-header-text {
+  display: flex;
+  color: #727176;
+  font-size: 14px;
+  font-weight: 500;
+}
+.picture-sorting .anticon-caret-down {
+  margin-left: auto;
+}
+
+.picture-sorting .ant-collapse-content-box {
+  padding: 0px 0px !important;
+}
+
+.picture-sorting .ant-checkbox-wrapper {
+  margin: 14px 0px;
+  padding: 0px 16px !important;
+}
+.picture-sorting .ant-checkbox .ant-checkbox-inner {
+  border: 2px solid #49454f !important;
+}
+
+.search {
+  border-radius: 0px;
+  background: #f4f4f4;
+  border: 1px solid #eeeeee;
+}
+
+.search:hover {
+  background: #f4f4f4;
+  border-color: white;
+  border: 1px solid #eeeeee;
+}
+.search .ant-col {
+  margin: 0px 0px 0px -16px !important;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon.rotated {
+  transform: rotate(90deg);
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.picture-sorting .ant-collapse-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user_profile .user_name_container .dropdown_icon_active {
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  transition: transform 400ms ease-in-out;
+}
+.icon-rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+.gallery-img:hover {
+  animation: scale-up-anim 0.3s forwards;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+}
+.gallery-img img {
+  animation: fadeIn 3s forwards;
+}

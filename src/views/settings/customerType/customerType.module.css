@@ -1,0 +1,83 @@
+.header {
+  text-align: center;
+  font-family: Poppins;
+}
+.sub_header {
+  font-size: 12px;
+  font-weight: 400;
+  color: #464646;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 350px;
+}
+.container {
+  padding: 10px 20px;
+  font-family: Poppins;
+}
+.list_head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+.card {
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: linear-gradient(
+    121deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+.product_name {
+  width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.side_banner {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  text-align: center;
+  padding: 5px 0;
+  height: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0 10px 10px 0;
+}
+
+.customer_address > a {
+  height: 35px;
+}
+.customer_contact {
+  font-size: 12px;
+  font-weight: 600;
+}
+.transfer_section {
+  text-align: start;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+.transfer_input {
+  margin-top: 8px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}

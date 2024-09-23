@@ -1,0 +1,19 @@
+.ant-drawer .ant-drawer-content,
+.ant-drawer-wrapper-body {
+  background: linear-gradient(
+      135.88deg,
+      #fefcfc -0.14%,
+      #fcf2f6 26.68%,
+      #ebe7f3 60.17%,
+      #e4f5f9 99.61%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  font-family: poppins;
+}
+.ant-drawer .ant-drawer-body {
+  padding: 0;
+}
+.ant-drawer-header-title {
+  flex-direction: row-reverse;
+  align-items: center;
+}

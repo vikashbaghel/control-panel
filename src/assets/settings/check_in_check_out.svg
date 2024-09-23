@@ -1,0 +1,11 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="mdi:shop-check">
+<path id="Vector" d="M30 9H6V6H30V9ZM23.535 21H21V23.535C20.055 24.96 19.5 26.655 19.5 28.5C19.5 29.01 19.56 29.505 19.635 30H6V21H4.5V18L6 10.5H30L31.5 18V20.025C30.555 19.695 29.55 19.5 28.5 19.5C26.655 19.5 24.96 20.055 23.535 21ZM18 21H9V27H18V21ZM32.01 23.76L26.625 29.145L24.24 26.76L22.5 28.5L26.625 33L33.75 25.875L32.01 23.76Z" fill="url(#paint0_linear_10662_2582)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_10662_2582" x1="6.76339" y1="10.3875" x2="32.1723" y2="11.5183" gradientUnits="userSpaceOnUse">
+<stop stop-color="#322E80"/>
+<stop offset="1" stop-color="#322E80" stop-opacity="0.7"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,41 @@
+.target_details_page {
+  padding-block: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.back_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.back_btn img {
+  cursor: pointer;
+}
+.back_btn h2 {
+  margin: 0;
+}
+.product_name {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.product_image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.user_details {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding-inline: 2em;
+}
+.user_details p {
+  margin: 0;
+}
+.user_details img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}

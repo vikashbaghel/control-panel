@@ -1,0 +1,321 @@
+.table_row ::before {
+  content: "";
+  width: 100%;
+  border-top: 1px solid #ddd;
+  position: absolute;
+}
+.add_product_form label {
+  line-height: 40px;
+}
+.add_product_form .buyer_detail {
+  display: flex;
+  justify-content: space-between;
+}
+.add_product_form .buyer_detail > div {
+  width: 48%;
+}
+.add_product_form .button_group > button {
+  margin: 10px;
+}
+/* Css Edit product view */
+.img_view {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.img_view > div {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 5px 7px 5px 0px;
+}
+.img_view > img {
+  position: relative;
+}
+.img_view > div > span {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+.img_view > div:hover > span {
+  opacity: 1;
+  transition: 0.2s opacity;
+  color: #b9b9b9fc;
+  margin: 6px -94px;
+  border-radius: 9px;
+  background: #00000066;
+  padding: 31px 36px;
+  font-size: 17px;
+}
+.img_view .Checkbox {
+  position: absolute;
+  margin: -19px -10px;
+}
+/* Address change View */
+.add_address_container {
+  position: absolute;
+  background: white;
+  padding: 10px 40px 40px 0px;
+  top: -1000px;
+  transition: top 0.4s;
+  z-index: 1;
+}
+.active {
+  top: 65px;
+  transition: top 0.4s;
+}
+/* shipped order view */
+.stepper_container {
+  display: flex;
+  justify-content: space-around;
+}
+.stepper_container > div {
+  border: 2px solid #1677ff;
+  border-radius: 25px;
+  padding: 2px 11px;
+  color: #1677ff;
+  background: white;
+  z-index: 2;
+}
+.second_step,
+.third_step {
+  border: 2px solid #ddd !important;
+  color: #ddd !important;
+  /* padding: 2px 10px !important; */
+}
+.stepper_container {
+  position: relative;
+  font-weight: 600;
+  z-index: 2;
+}
+.stepper_container .first_step::after,
+.stepper_container .second_step::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  border-top: 2px solid #ddd;
+  margin-top: 9px;
+  margin-left: 12.5px;
+  width: 31%;
+}
+.active_step {
+  border: 2px solid #1677ff !important;
+  color: #1677ff !important;
+}
+.first_step_active {
+  background: #1677ff !important;
+  color: white !important;
+}
+.first_step_active::after {
+  border-top: 2px solid #1677ff !important;
+}
+.second_step_active {
+  border: 2px solid #1677ff !important;
+  background: #1677ff !important;
+  color: white !important;
+}
+.second_step_active::after {
+  border-top: 2px solid #1677ff !important;
+}
+.lr_images {
+  width: 76px;
+  height: 76px;
+  overflow: hidden;
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 4px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.lr_images span > img {
+  position: absolute;
+  opacity: 0;
+  background: #ffffff3d;
+  padding: 28px;
+  top: 4px;
+  left: 4px;
+  filter: invert(0.7);
+}
+.lr_images:hover span > img {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+/* categorListView */
+.category_container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.category_list {
+  margin: 5px 10px;
+  padding: 0 10px;
+  line-height: 40px;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.category_list:hover {
+  background-color: #f3f3f3;
+  transition: background-color 0.5s;
+}
+
+.view_img_preview {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+.view_img_preview_container:hover .view_img_preview {
+  opacity: 1;
+  transition: opacity 0.2s;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(0, 0, 0, 0.3);
+  padding: 36px;
+  border-radius: 5px;
+  filter: invert(0.3);
+}
+
+.stepper_container_Beat {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.stepper_container_Beat > div {
+  border: 2px solid #1677ff;
+  border-radius: 25px;
+  padding: 2px 11px;
+  color: #1677ff;
+  background: white;
+  z-index: 2;
+}
+.second_step_Beat {
+  border: 2px solid #ddd !important;
+  color: #ddd !important;
+  /* padding: 2px 10px !important; */
+}
+.stepper_container_Beat {
+  position: relative;
+  font-weight: 600;
+  z-index: 2;
+}
+.stepper_container_Beat .first_step_Beat::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  border-top: 2px solid #ddd;
+  margin-top: 9px;
+  margin-left: 12.5px;
+  width: 45%;
+}
+.active_step_Beat {
+  border: 2px solid #1677ff !important;
+  color: #1677ff !important;
+}
+.first_step_active_Beat {
+  background: #1677ff !important;
+  color: white !important;
+}
+.first_step_active_Beat::after {
+  border-top: 2px solid #1677ff !important;
+}
+.second_step_active_Beat {
+  border: 2px solid #1677ff !important;
+  background: #1677ff !important;
+  color: white !important;
+}
+.second_step_active_Beat::after {
+  border-top: 2px solid #1677ff !important;
+}
+
+/* new ui css for dispatch order section */
+.item_container {
+  border-radius: 10px;
+  border: 4px solid #fff;
+  background: linear-gradient(
+    121deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  box-shadow: 2px 6px 12px 4px rgba(0, 0, 0, 0.02);
+}
+.table_header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #727176;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+}
+.table_header span {
+  padding: 0 25px;
+}
+.item_card {
+  margin: 10px 0 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  padding: 10px 0 10px 20px;
+}
+.item_card > div:first-child {
+  display: flex;
+  align-items: center;
+}
+.item_card img {
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+}
+.item_container .label {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 15px 0 5px 0;
+}
+.item_container input,
+.item_container textarea {
+  width: 100%;
+}
+
+/* Payment Modal */
+.payment_form label {
+  display: block !important;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.payment_form input,
+.payment_form textarea {
+  width: calc(100% - 35px);
+}
+.payment_form select {
+  width: 100%;
+}
+.payment_form .error {
+  border: 2px solid red;
+}
+
+.dispatch_item_list_group {
+  padding: 10px 0;
+}
+
+.dispatch_group_2_line_inner_heading {
+  background: #fff;
+  display: flex;
+  color: #727176;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+.dispatch_group_2_line_inner_heading > div:first-child {
+  width: 40%;
+}
+.dispatch_group_2_line_inner {
+  display: flex;
+  padding: 5px 20px;
+}
+.dispatch_group_2_line_inner > div:first-child {
+  width: 43%;
+}

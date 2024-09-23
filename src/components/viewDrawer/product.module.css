@@ -1,0 +1,6 @@
+.dot-color .slick-dots li button:before {
+    background-color: red;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+}
