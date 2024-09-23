@@ -64,3 +64,17 @@ jobs:
 
       - name: Invalidate CloudFront distribution
         run: aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+
+      - name: Report Status
+        if: always()
+        uses: ravsamhq/notify-slack-action@v1
+        with:
+          status: ${{ job.status }}
+          notify_when: 'success,failure,warning'
+          notification_title: '{workflow} has {status_message}'
+          message_format: '{emoji} <{commit_url}|${{github.event.pull_request.title}}> deployed on uat-test-sales.rupyz.com'
+          mention_users: 'U04F55SKGPL,U05RBHZGMQX'
+          mention_users_when: 'failure,warnings'
+          footer: 'Linked to Repo <{repo_url}|{repo}>'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.ACTION_MONITORING_SLACK }}
