@@ -36,7 +36,7 @@ jobs:
         id: extract_subdomain
         run: |
           if [[ "${{ env.PR_BODY }}" != "" ]]; then
-            subdomain=$(echo "${{ env.PR_BODY }}" | grep -oP '(?<=/deploy\s+)"?([^"]+)"?')
+            subdomain=$(echo "${{ env.PR_BODY }}" | grep -oP '/deploy\s+"?([^"]+)"?' | awk '{print $2}' | tr -d '"')
             if [[ -z "$subdomain" ]]; then
               echo "No subdomain found in PR body"
               exit 1
