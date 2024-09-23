@@ -15,9 +15,9 @@ jobs:
       AWS_REGION: ${{ secrets.AWS_REGION }}
 
       # get react secrets
-      REACT_APP_GOOGLE_MAPS_KEY: ${{ secrets.REACT_APP_GOOGLE_MAPS_KEY }}
-      REACT_APP_FCM_VAPID: ${{ secrets.REACT_APP_FCM_VAPID }}
-      REACT_APP_SENTRY_DSN: ${{ secrets.REACT_APP_SENTRY_DSN }}
+      #REACT_APP_GOOGLE_MAPS_KEY: ${{ secrets.REACT_APP_GOOGLE_MAPS_KEY }}
+      #REACT_APP_FCM_VAPID: ${{ secrets.REACT_APP_FCM_VAPID }}
+      #REACT_APP_SENTRY_DSN: ${{ secrets.REACT_APP_SENTRY_DSN }}
 
       # get from env
       S3_BUCKET_NAME: ${{ vars.UAT_S3_BUCKET_NAME }}
